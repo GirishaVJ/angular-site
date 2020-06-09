@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+
 import { HomeComponent } from './pages/home/home.component';
 import { BannerComponent } from './components/banner/banner.component';
 import { HightlightsComponent } from './components/hightlights/hightlights.component';
@@ -11,6 +12,15 @@ import { NewsAndEventsComponent } from './components/news-and-events/news-and-ev
 import { PennedByOurMindsComponent } from './components/penned-by-our-minds/penned-by-our-minds.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { HeaderComponent } from './components/header/header.component';
+
+import { SwiperModule } from 'ngx-swiper-wrapper';
+import { SWIPER_CONFIG } from 'ngx-swiper-wrapper';
+import { SwiperConfigInterface } from 'ngx-swiper-wrapper';
+
+const DEFAULT_SWIPER_CONFIG: SwiperConfigInterface = {
+  direction: 'horizontal',
+  slidesPerView: 'auto',
+};
 
 @NgModule({
   declarations: [
@@ -22,13 +32,10 @@ import { HeaderComponent } from './components/header/header.component';
     NewsAndEventsComponent,
     PennedByOurMindsComponent,
     FooterComponent,
-    HeaderComponent
+    HeaderComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
+  imports: [BrowserModule, AppRoutingModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
