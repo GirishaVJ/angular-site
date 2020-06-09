@@ -2,10 +2,10 @@
   <div class="ganit-container">
     <h2>News & Events</h2>
 
-    <!-- <div class="swiper-container">
+    <div class="swiper-container" [swiper]="config">
       <div class="swiper-wrapper">
-        <div class="swiper-slide">
-          Swiper slide content
+        <div class="swiper-slide" *ngFor="let slide of slides">
+          <img [src]="slide" alt="" />
         </div>
       </div>
 
@@ -14,7 +14,7 @@
 
       <div class="swiper-button-prev"></div>
       <div class="swiper-button-next"></div>
-    </div>  -->
+    </div>
     <div class="ganit-event-tiles">
       <div class="ganit-event-image">
         <img src="./assets/images/minds-img.jpg" alt="" title="" />
