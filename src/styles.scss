@@ -21,6 +21,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'CenturyGothic';
+  list-style: none;
   font-weight: normal;
   font-stretch: normal;
   font-style: normal;
@@ -36,7 +37,7 @@ h2 {
   line-height: 0.97;
 }
 p {
-  font-size: 22px;
+  font-size: 18px;
   line-height: 1.73;
 }
 .clr-blue {
@@ -45,14 +46,7 @@ p {
 }
 .clear-both {
   clear: both;
-}
-a {
-  text-decoration: none;
-}
-a:hover {
-  text-decoration: underline;
-}
-
+} 
 .ganit-container {
   max-width: 1366px;
   margin: 0 auto;
@@ -67,4 +61,29 @@ header {
 }
 section {
   margin-bottom: 50px;
+}
+a {
+  position: relative;
+  display: inline;
+  cursor: pointer;
+  transition: color 0.4s ease;
+  text-decoration: none;
+  color: #111111;
+}
+a:hover {
+  color: #2489ff;
+}
+a:hover:after {
+  width: 100%;
+}
+a:after {
+  content: '';
+  position: absolute;
+  z-index: 1;
+  bottom: -0.15em;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: #2489ff;
+  transition: width 0.4s ease;
 }

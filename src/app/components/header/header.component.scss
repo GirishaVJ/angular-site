@@ -2,6 +2,7 @@
   color: #2489ff;
   font-size: 30px;
   float: left;
+  font-weight: 700;
 }
 .hambergarmenu {
   float: right;
@@ -19,13 +20,7 @@
   align-items: center;
   justify-content: center;
 }
-
-.outer-menu {
-  position: fixed;
-  top: 10vh;
-  left: 0;
-  z-index: 1;
-}
+ 
 .outer-menu .checkbox-toggle {
   position: fixed;
   top: 40px;
@@ -73,7 +68,7 @@
   width: 60px;
   height: 60px;
   padding: 0.5em 1em;
-  background: rgba(33, 150, 243, 0.75);
+  // background: rgba(33, 150, 243, 0.75);
   border-radius: 0 0.12em 0.12em 0;
   cursor: pointer;
   transition: box-shadow 0.4s ease;
@@ -86,8 +81,8 @@
   position: relative;
   flex: none;
   width: 100%;
-  height: 2px;
-  background: #fefefe;
+  height: 3px;
+  background: #000000;
   transition: all 0.4s ease;
   display: flex;
   align-items: center;
@@ -127,7 +122,7 @@
   width: 200vw;
   height: 200vw;
   color: #fefefe;
-  background: rgba(41, 98, 255, 0.97);
+  background: #f7f7f7;
   border-radius: 50%;
   transition: all 0.4s ease;
   flex: none;
@@ -138,12 +133,11 @@
   align-items: center;
   justify-content: center;
 }
-
 .outer-menu .menu a {
-  color: #fff;
+  color: #111111;
+  font-size: 32px;
 }
-.outer-menu .menu > div > div {
-  text-align: center;
+.outer-menu .menu > div > div { 
   max-width: 90vw;
   max-height: 100vh;
   opacity: 0;
@@ -154,39 +148,35 @@
   align-items: center;
   justify-content: center;
 }
+.outer-menu .menu > div div{
+  display: block;
+}
 .outer-menu .menu > div > div > ul {
   list-style: none;
   padding: 0 1em;
   margin: 0;
   display: block;
   max-height: 100vh;
+  float: left;
+}
+.industries-menu-link {
+  font-size: 32px;
+}
+.industries-menu-link:after {
+  content: "";
+  width: 67px;
+  height: 3px;
+  border-radius: 2px;
+  background-color: #2489ff;
+  display: block;
+}
+.outer-menu .menu > div > div.industries-menu ul a{
+  font-size: 18px;
+  font-weight: 700;
 }
 .outer-menu .menu > div > div > ul > li {
   padding: 0;
   margin: 1em;
   font-size: 24px;
   display: block;
-}
-.outer-menu .menu > div > div > ul > li > a {
-  position: relative;
-  display: inline;
-  cursor: pointer;
-  transition: color 0.4s ease;
-}
-.outer-menu .menu > div > div > ul > li > a:hover {
-  color: #e5e5e5;
-}
-.outer-menu .menu > div > div > ul > li > a:hover:after {
-  width: 100%;
-}
-.outer-menu .menu > div > div > ul > li > a:after {
-  content: '';
-  position: absolute;
-  z-index: 1;
-  bottom: -0.15em;
-  left: 0;
-  width: 0;
-  height: 2px;
-  background: #e5e5e5;
-  transition: width 0.4s ease;
 }

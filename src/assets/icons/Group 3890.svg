@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="prefix__Group_3890" width="36" height="36" data-name="Group 3890" viewBox="0 0 36 36">
+    <defs>
+        <style>
+            .prefix__cls-2{fill:#fff}
+        </style>
+    </defs>
+    <rect id="prefix__Rectangle_370" width="36" height="36" data-name="Rectangle 370" rx="4" style="fill:#2489ff"/>
+    <g id="prefix__flask" transform="translate(-12.152 7.316)">
+        <path id="prefix__Path_9710" d="M39.345 16.557l-6.217-9.77V3.756a1.878 1.878 0 1 0 0-3.756h-6.26a1.878 1.878 0 1 0 0 3.756v3.031l-6.217 9.77a3.128 3.128 0 0 0 2.641 4.811H36.7a3.128 3.128 0 0 0 2.645-4.811zM28.022 7.306a.626.626 0 0 0 .1-.336V3.756a.626.626 0 0 0 0-1.252h-1.255a.626.626 0 0 1 0-1.252h6.26a.626.626 0 0 1 0 1.252h-1.252a.626.626 0 1 0 0 1.252V6.97a.626.626 0 0 0 .1.336l1.7 2.675a5.619 5.619 0 0 0-4.3.824l-1.956 1.3a4.362 4.362 0 0 1-2.908.711zm8.678 12.81H23.291a1.877 1.877 0 0 1-1.584-2.886l2.077-3.264a5.6 5.6 0 0 0 4.331-.815l1.956-1.3a4.37 4.37 0 0 1 4.745-.075l3.473 5.458a1.877 1.877 0 0 1-1.589 2.882z" class="prefix__cls-2" data-name="Path 9710"/>
+        <path id="prefix__Path_9711" d="M122.878 362a1.878 1.878 0 1 0 1.878 1.878 1.88 1.88 0 0 0-1.878-1.878zm0 2.5a.626.626 0 1 1 .626-.626.627.627 0 0 1-.626.626z" class="prefix__cls-2" data-name="Path 9711" transform="translate(-96.637 -346.892)"/>
+        <path id="prefix__Path_9712" d="M272.878 302a1.878 1.878 0 1 0 1.878 1.878 1.88 1.88 0 0 0-1.878-1.878zm0 2.5a.626.626 0 1 1 .626-.626.627.627 0 0 1-.626.626z" class="prefix__cls-2" data-name="Path 9712" transform="translate(-240.377 -289.396)"/>
+        <circle id="prefix__Ellipse_82" cx=".626" cy=".626" r=".626" class="prefix__cls-2" data-name="Ellipse 82" transform="translate(29.371 16.36)"/>
+        <circle id="prefix__Ellipse_83" cx=".626" cy=".626" r=".626" class="prefix__cls-2" data-name="Ellipse 83" transform="translate(34.379 16.36)"/>
+        <circle id="prefix__Ellipse_84" cx=".626" cy=".626" r=".626" class="prefix__cls-2" data-name="Ellipse 84" transform="translate(31.875 17.612)"/>
+    </g>
+</svg>

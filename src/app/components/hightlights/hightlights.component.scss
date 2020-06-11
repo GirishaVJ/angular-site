@@ -1,6 +1,28 @@
-.ganit-highlights .ganit-container{
+.ganit-highlights {
+  position: relative;
+  .ganit-container{
     padding:0 300px;
+    h2{
+      margin-bottom: 40px;
+    }
   }
-  .ganit-highlights h2{
-    margin-bottom: 40px;
+  .icon_one,.icon_two,.icon_three,.icon_four{
+    position: absolute;
   }
+  .icon_one {
+    top: 0;
+    left: 5%;
+  }
+  .icon_two{
+    top: 0;
+    right: 5%;
+  }
+  .icon_three{
+    left: 5%;
+    bottom: 0;
+  }
+  .icon_four{ 
+    bottom: 0;
+    right: 5%; 
+  }
+} 

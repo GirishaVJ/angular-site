@@ -1,36 +1,40 @@
-
-footer {
-    position: relative;
-    border-bottom: 3px solid #2489ff;
-  }
-  footer .ganit-container {
-    display: flex;
-  }
-  .footer-left-column {
-    flex-basis: 70%;
-    background-color: #fff;
-    display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  
-  z-index: 1;
-  }
-  .address {
-    flex-basis: 30%;
+.footer {
+  position: relative;
+  border-bottom: 3px solid #2489ff;
+  .container-fluid {
     z-index: 1;
-  }
-  .footer-links {
-    display: flex;
-  }
-  
-  .footer-links div {
-  flex-basis: 25%;
-  display: flex;
-  flex-direction: column;
+    position: relative;
+    h3 {
+      line-height: 32px;
+      font-size: 18px;
+      font-weight: 700;
+    }
+    .col-md-9 {
+      background-color: #ffffff;
+      .ganit-logo {
+        color: #111111;
+        font-size:25px;
+        font-weight: bold; 
+        font-weight: 700;
+        margin-bottom: 30px;
+      }
+      a {
+        line-height: 40px;
+      }
+    }
+    .address {
+      padding: 20px 0 0 20px;
+      h3 {
+        color: #ffffff;
+      }
+      p {
+        color: #ffffff;
+      }
+    }
   }
   .footer-bottom-links {
     justify-content: space-evenly;
-  display: flex;
+    display: flex;
   }
   .blue-bg {
     background-color: #2489ff;
@@ -40,3 +44,7 @@ footer {
     top:0;
     right:0;
   }
+}
+.copyrights {
+  line-height: 50px;
+}
