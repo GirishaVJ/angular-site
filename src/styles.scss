@@ -46,7 +46,7 @@ p {
 }
 .clear-both {
   clear: both;
-} 
+}
 .ganit-container {
   max-width: 1366px;
   margin: 0 auto;
@@ -57,7 +57,7 @@ header {
   width: 100%;
   padding-top: 50px;
   background-color: #fff;
-  z-index: 1;
+  z-index: 10;
 }
 section {
   margin-bottom: 50px;
@@ -86,4 +86,50 @@ a:after {
   height: 2px;
   background: #2489ff;
   transition: width 0.4s ease;
+}
+
+.icon {
+  width: 30px;
+  height: 20px;
+  display: inline-block;
+  vertical-align: middle;
+  &.retails {
+    background: url('./assets/icons/Group3879.svg') no-repeat center center;
+  }
+  &.cpg {
+    background: url('./assets/icons/Group3880.svg') no-repeat center center;
+  }
+  &.Pharma {
+    background: url('./assets/icons/Group3881.svg') no-repeat center center;
+  }
+  &.financial-services {
+    background: url('./assets/icons/Group3882.svg') no-repeat center center;
+  }
+  &.media {
+    background: url('./assets/icons/Group3883.svg') no-repeat center center;
+  }
+  &.automotive {
+    background: url('./assets/icons/Group3884.svg') no-repeat center center;
+  }
+  &.chemicals {
+    background: url('./assets/icons/Group3885.svg') no-repeat center center;
+  }
+  &.energy {
+    background: url('./assets/icons/Group3886.svg') no-repeat center center;
+  }
+  &.public-sector {
+    background: url('./assets/icons/Group3887.svg') no-repeat center center;
+  }
+  &.restaurants-hospitality {
+    background: url('./assets/icons/Group3888.svg') no-repeat center center;
+  }
+  &.logistics {
+    background: url('./assets/icons/Group3890.svg') no-repeat center center;
+  }
+  &.manufacturing {
+    background: url('./assets/icons/Group3879.svg') no-repeat center center;
+  }
+  // &.manufacturing {
+  //   background: url('./assets/icons/Group3879.svg') no-repeat center center;
+  // }
 }

@@ -1,4 +1,81 @@
 <header>
+  <div class="container menu-header">
+    <div class="ganit-logo">Ganit</div>
+    <div class="hambergarmenu">
+      <input
+        class="checkbox-toggle"
+        id="hamburger"
+        type="checkbox"
+        [(ngModel)]="toggleMenu"
+      />
+      <label for="hamburger"><span></span></label>
+    </div>
+  </div>
+  <div class="menu-wrapper" [ngClass]="{ 'menu-open': toggleMenu }">
+    <div class="">
+      <div class="d-flex d-md-flex justify-content-around">
+        <div class="menu-type1 flex-fill">
+          <ul>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Platforms</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Geekbar</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+        <div class="menu-type2 flex-fill">
+          <div class="industries-menu">
+            <div class="industries-menu-link">Industries</div>
+            <ul>
+              <li>
+                <a href="#"><i class="icon retails"></i> Retails</a>
+              </li>
+              <li>
+                <a href="#"><i class="icon cpg"></i> CPG</a>
+              </li>
+              <li>
+                <a href="#"><i class="icon Pharma"></i> Pharma</a>
+              </li>
+              <li>
+                <a href="#"
+                  ><i class="icon financial-services"></i> Financial Services</a
+                >
+              </li>
+              <li>
+                <a href="#"><i class="icon media"></i> Media</a>
+              </li>
+              <li>
+                <a href="#"><i class="icon automotive"></i>Automotive</a>
+              </li>
+              <li>
+                <a href="#"><i class="icon Pharma"></i>Chemicals</a>
+              </li>
+              <li>
+                <a href="#"><i class="icon energy"></i>Energy</a>
+              </li>
+              <li>
+                <a href="#"><i class="icon automotive"></i>Public Sector</a>
+              </li>
+              <li>
+                <a href="#"
+                  ><i class="icon restaurants-hospitality"></i>Restaurants &
+                  Hospitality</a
+                >
+              </li>
+              <li>
+                <a href="#"><i class="icon cpg"></i>Logistics</a>
+              </li>
+              <li>
+                <a href="#"><i class="icon manufacturing"></i>Manufacturing</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+<!-- <header>
   <div class="ganit-container"> 
     <div class="outer-menu">
       <div class="ganit-logo">Ganit</div>
@@ -48,4 +125,4 @@
     </div>
     <div class="clear-both"></div>
   </div>
-</header>
+</header> -->
