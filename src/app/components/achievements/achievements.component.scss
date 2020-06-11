@@ -1,4 +1,21 @@
-.ganit-achievements { 
+.ganit-achievements {
+  .ganit-achievements-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    div {
+      height: 140px;
+      position: relative;
+      padding: 30px 250px 0 0;
+      .icon {
+        position: absolute;
+        margin-left: -175px;
+        width: 140px;
+        height: 140px;
+      }
+    }
+  }
 }
 .ganit-achievements-gallery {
   display: flex;

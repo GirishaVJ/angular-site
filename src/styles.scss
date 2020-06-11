@@ -33,8 +33,9 @@ h1 {
   line-height: 1.03;
 }
 h2 {
-  font-size: 62px;
+  font-size: 46px;
   line-height: 0.97;
+  margin-bottom: 40px;
 }
 p {
   font-size: 18px;
@@ -128,6 +129,15 @@ a:after {
   }
   &.manufacturing {
     background: url('./assets/icons/Group3879.svg') no-repeat center center;
+  }
+  &.achievements-one {
+    background: url('./assets/icons/Component6–6.svg') no-repeat center center;
+  }
+  &.achievements-two {
+    background: url('./assets/icons/Component7–6.svg') no-repeat center center;
+  }
+  &.achievements-three {
+    background: url('./assets/icons/Component8–6.svg') no-repeat center center;
   }
   // &.manufacturing {
   //   background: url('./assets/icons/Group3879.svg') no-repeat center center;

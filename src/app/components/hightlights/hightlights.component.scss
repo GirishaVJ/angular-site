@@ -1,12 +1,14 @@
 .ganit-highlights {
   position: relative;
-  .ganit-container{
-    padding:0 300px;
-    h2{
-      margin-bottom: 40px;
-    }
+  margin-bottom: 250px;
+  h2{
+    margin-bottom: 40px;
   }
-  .icon_one,.icon_two,.icon_three,.icon_four{
+  main {
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  .icon_one,.icon_two,.icon_three,.icon_four {
     position: absolute;
   }
   .icon_one {
@@ -14,8 +16,8 @@
     left: 5%;
   }
   .icon_two{
-    top: 0;
-    right: 5%;
+    top: 10%;
+    right: 15%;
   }
   .icon_three{
     left: 5%;
