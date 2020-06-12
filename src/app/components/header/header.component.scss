@@ -80,11 +80,15 @@
   width: 100%;
   top: 0;
   left: 0;
-  transition: all 0.5s;
+  transition: all 0.6s;
   border-bottom: 2px solid #ccc;
   &.menu-open {
     height: 100vh;
     overflow: auto;
+    > .menu-type1,
+    .menu-type2 {
+      height: 99vh;
+    }
   }
   a {
     &:hover {
@@ -142,6 +146,41 @@
     a {
       font-weight: bold;
       font-size: 18px;
+    }
+  }
+}
+
+.menu-rects {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  .menu-rect {
+    width: 25%;
+    height: 100%;
+    background: #2489ff;
+    -webkit-transform-origin: 50% 0 0;
+    transform-origin: 50% 0 0;
+    -webkit-transform: scaleY(0);
+    transform: scaleY(0);
+    &:nth-child(1) {
+      transition: all 0.4s;
+    }
+    &:nth-child(2) {
+      transition: all 0.43s;
+    }
+    &:nth-child(3) {
+      transition: all 0.47s;
+    }
+    &:nth-child(4) {
+      transition: all 0.49s;
+    }
+  }
+  &.rects-open {
+    .menu-rect {
+      transform: scaleY(1);
     }
   }
 }

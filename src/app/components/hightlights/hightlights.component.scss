@@ -1,30 +1,54 @@
 .ganit-highlights {
   position: relative;
   margin-bottom: 250px;
-  h2{
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ffffff+0,ffffff+34&0+0,1+13 */
+  background: -moz-linear-gradient(
+    top,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 1) 13%,
+    rgba(255, 255, 255, 1) 34%
+  ); /* FF3.6-15 */
+  background: -webkit-linear-gradient(
+    top,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 1) 13%,
+    rgba(255, 255, 255, 1) 34%
+  ); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 1) 13%,
+    rgba(255, 255, 255, 1) 34%
+  ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
+
+  h2 {
     margin-bottom: 40px;
   }
   main {
     max-width: 900px;
     margin: 0 auto;
   }
-  .icon_one,.icon_two,.icon_three,.icon_four {
+  .icon_one,
+  .icon_two,
+  .icon_three,
+  .icon_four {
     position: absolute;
   }
   .icon_one {
     top: 0;
     left: 5%;
   }
-  .icon_two{
+  .icon_two {
     top: 10%;
     right: 15%;
   }
-  .icon_three{
+  .icon_three {
     left: 5%;
     bottom: 0;
   }
-  .icon_four{ 
+  .icon_four {
     bottom: 0;
-    right: 5%; 
+    right: 5%;
   }
-} 
+}
