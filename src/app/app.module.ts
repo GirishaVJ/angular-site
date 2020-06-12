@@ -17,6 +17,7 @@ import { HeaderComponent } from './components/header/header.component';
 import { SwiperModule } from 'ngx-swiper-wrapper';
 import { SWIPER_CONFIG } from 'ngx-swiper-wrapper';
 import { SwiperConfigInterface } from 'ngx-swiper-wrapper';
+import { BannerAnimationComponent } from './components/banner-animation/banner-animation.component';
 
 const DEFAULT_SWIPER_CONFIG: SwiperConfigInterface = {
   direction: 'horizontal',
@@ -34,6 +35,7 @@ const DEFAULT_SWIPER_CONFIG: SwiperConfigInterface = {
     PennedByOurMindsComponent,
     FooterComponent,
     HeaderComponent,
+    BannerAnimationComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule, SwiperModule],
   providers: [
