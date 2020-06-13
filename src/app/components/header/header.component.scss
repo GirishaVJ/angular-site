@@ -112,6 +112,7 @@
 .menu-type1 {
   padding: 120px 0 20px;
   position: relative;
+  overflow: hidden;
   a {
     font-size: 20px;
     font-weight: 600;
@@ -122,9 +123,10 @@
   }
   .menu-bg {
     position: absolute;
-    right: 0;
-    bottom: 0;
-    width: 400px;
+    right: -51px;
+    bottom: -53px;
+    width: 540px;
+    transform: rotate(89deg);
   }
 }
 .menu-type2 {
