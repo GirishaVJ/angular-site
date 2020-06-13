@@ -1,5 +1,6 @@
 .footer {
   position: relative;
+  background-color: #ffffff;
   border-bottom: 3px solid #2489ff;
   .container-fluid {
     z-index: 1;
@@ -45,11 +46,22 @@
     right:0;
   }
 }
-.copyrights {
-  line-height: 50px;
+.copyrights-container {
+  position: relative;
+  background-color: #ffffff;
+  .copyrights {
+    line-height: 50px;
+  }
 }
 @media (min-width: 0) and (max-width: 767.98px) {
-  .blue-bg {
-    display: none;
+  .footer {
+    .blue-bg {
+      width: 100%;
+      position: absolute;
+      height: 50%;
+      top:auto;
+      right: 0;
+      bottom: 0;
+    }
   }
 }

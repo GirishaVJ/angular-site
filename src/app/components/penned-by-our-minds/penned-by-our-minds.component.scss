@@ -1,6 +1,13 @@
 .penned-by-our-minds {
+  background-color: #ffffff;
+  position: relative;
   .container {
     position: relative;
+    .ganit-minds-image {
+      img {
+        max-width: 100%;
+      }
+    }
     .viewall {
       position: absolute;
       top:18px;
