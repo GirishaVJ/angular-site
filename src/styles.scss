@@ -142,6 +142,26 @@ a {
 a:hover {
   color: #2489ff;
 }
+a.viewall {
+  transition: all 0.5s;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 700;
+  i { 
+      opacity: 0;
+      transition: 0.5s;
+      line-height: 27px;
+      margin-left:-5px;
+  }
+  &:hover i { 
+      opacity: 1;
+      margin-left: 10px;
+  }
+}
+.heading-with-viewall {
+  display: flex;
+  justify-content: space-between;
+}
 // a:hover:after {
 //   width: 100%;
 // }

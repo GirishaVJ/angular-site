@@ -1,7 +1,7 @@
 .ganit-highlights {
   position: relative;
   display: flex;
-  min-height: 90vh;
+  padding-bottom: 50px;
 
   /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ffffff+0,ffffff+34&0+0,1+13 */
   background: -moz-linear-gradient(
@@ -49,10 +49,10 @@
   }
   .icon_three {
     left: 5%;
-    bottom: 0;
+    bottom: 15%;
   }
   .icon_four {
-    bottom: 0;
+    bottom: 8%;
     right: 5%;
   }
 }

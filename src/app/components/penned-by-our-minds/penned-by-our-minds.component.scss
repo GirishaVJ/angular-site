@@ -1,6 +1,7 @@
 .penned-by-our-minds {
   background-color: #ffffff;
   position: relative;
+  padding-bottom: 50px;
   .container {
     position: relative;
     .ganit-minds-image {
@@ -8,10 +9,12 @@
         max-width: 100%;
       }
     }
-    .viewall {
-      position: absolute;
-      top:18px;
-      right: 0;
+  }
+  img {
+    transition: all 0.32s;
+    filter: grayscale(100%);
+    &:hover {
+      filter: grayscale(0);
     }
   }
 }
@@ -28,6 +31,22 @@
   color: #ffffff;
   background-color: #2489ff;
   text-align: center;
-  outline: none;
-  border: none;
+  padding: 10px 0 10px 15px;
+  i { 
+    opacity: 0;
+    transition: 0.5s;
+    line-height: 27px;
+    margin-left:-5px;
   }
+  &:hover {
+    color: #ffffff;
+    i.icon-arrow-right{ 
+      opacity: 1;
+      margin-left: 10px;
+      &:before{
+        color:#ffffff;
+
+      }
+    }
+  }
+}
