@@ -7,9 +7,8 @@
         id="hamburger"
         type="checkbox"
         [(ngModel)]="toggleMenu"
-        (change)="toggle($event)"
       />
-      <label for="hamburger"><span></span></label>
+      <label for="hamburger"><span></span> <em>Close</em></label>
     </div>
   </div>
   <div class="menu-wrapper" [ngClass]="{ 'menu-open': toggleMenu }">

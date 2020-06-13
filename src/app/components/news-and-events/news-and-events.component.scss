@@ -1,17 +1,22 @@
 .news-and-events {
-    position: relative;
+  position: relative;
+  background: #fff;
+
+  .container {
     overflow: hidden;
-    .swiper-button-prev,
-    .swiper-button-next {
-        position: absolute;
-        top: -75px;
-        right: 0;
-        font-size: 30px;
-    }
-    .swiper-button-prev {
-        right: 50px;
-    }
+    position: relative;
+  }
+  .swiper-button-prev,
+  .swiper-button-next {
+    position: absolute;
+    top: -75px;
+    right: 0;
+    font-size: 30px;
+  }
+  .swiper-button-prev {
+    right: 50px;
+  }
 }
 .swiper-container {
-    overflow:visible;
+  overflow: visible;
 }

@@ -25,6 +25,4 @@ export class HeaderComponent implements OnInit {
       prevScrollpos = currentScrollPos;
     };
   }
-
-  toggle(e) {}
 }

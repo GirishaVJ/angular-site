@@ -12,6 +12,8 @@ export class NewsAndEventsComponent implements OnInit {
     pagination: { el: '.swiper-pagination', clickable: true },
     autoHeight: true,
     allowTouchMove: true,
+    slidesPerView: 3,
+    spaceBetween: 30,
     autoplay: {
       delay: 6000,
       disableOnInteraction: true,
