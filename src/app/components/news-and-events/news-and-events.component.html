@@ -1,4 +1,4 @@
-<section class="news-and-events">
+<section class="news-and-events" (window:resize)="onResize($event)">
   <div class="container">
     <div class="row">
       <div>
@@ -6,10 +6,13 @@
 
         <div class="swiper-container" [swiper]="config">
           <div class="swiper-wrapper">
-            <!-- <div class="swiper-slide" *ngFor="let slide of slides">
-          <img [src]="slide" alt="" />
-        </div> -->
-            <div class="swiper-slide">
+            <div class="swiper-slide" *ngFor="let slide of slides">
+              <div>
+                <img [src]="slide.img" alt="" />
+                <p [innerHTML]="slide.text"></p>
+              </div>
+            </div>
+            <!-- <div class="swiper-slide">
               <div class="ganit-event-tiles">
                 <div class="ganit-event-image">
                   <img src="./assets/images/minds-img.jpg" alt="" title="" />
@@ -44,14 +47,18 @@
                   to recruit fresh & exciting talent
                 </p>
               </div>
-            </div>
+            </div> -->
           </div>
 
           <div class="swiper-scrollbar"></div>
           <div class="swiper-pagination"></div>
 
-          <div class="swiper-button-prev">&#8592;</div>
-          <div class="swiper-button-next">&#8594;</div>
+          <div class="swiper-button-prev">
+            <i class="icon icon-arrow-left"></i>
+          </div>
+          <div class="swiper-button-next">
+            <i class="icon icon-arrow-right"></i>
+          </div>
         </div>
       </div>
     </div>

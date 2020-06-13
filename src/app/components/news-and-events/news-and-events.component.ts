@@ -12,7 +12,7 @@ export class NewsAndEventsComponent implements OnInit {
     pagination: { el: '.swiper-pagination', clickable: true },
     autoHeight: true,
     allowTouchMove: true,
-    slidesPerView: 3,
+    //slidesPerView: 3,
     spaceBetween: 30,
     autoplay: {
       delay: 6000,
@@ -20,7 +20,7 @@ export class NewsAndEventsComponent implements OnInit {
     },
     breakpoints: {
       1024: {
-        slidesPerView: 3,
+        slidesPerView: 5,
       },
       500: {
         slidesPerView: 3,
@@ -40,10 +40,25 @@ export class NewsAndEventsComponent implements OnInit {
   };
 
   slides = [
-    'https://via.placeholder.com/500x200/FF5733/ffffff',
-    'https://via.placeholder.com/500x200/C70039/ffffff',
-    'https://via.placeholder.com/500x200/900C3F/ffffff',
+    {
+      img: './assets/images/minds-img.jpg',
+      text:
+        '<p>Ganit visits<span class="clr-blue">top engineering & math colleges</span>to recruit fresh & exciting talent</p>',
+    },
+    {
+      img: './assets/images/minds-img.jpg',
+      text:
+        '<p>Ganit visits<span class="clr-blue">top engineering & math colleges</span>to recruit fresh & exciting talent</p>',
+    },
+    {
+      img: './assets/images/minds-img.jpg',
+      text:
+        '<p>Ganit visits<span class="clr-blue">top engineering & math colleges</span>to recruit fresh & exciting talent</p>',
+    },
   ];
 
   ngOnInit() {}
+  loadSlider() {}
+
+  onResize(e) {}
 }
