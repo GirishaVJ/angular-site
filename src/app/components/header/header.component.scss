@@ -30,6 +30,16 @@
     height: 30px;
     width: 30px;
     cursor: pointer;
+    position: relative;
+    em {
+      position: absolute;
+      top: -10px;
+      left: 0px;
+      text-transform: uppercase;
+      opacity: 0;
+      transition: all 0.3s ease-in;
+    }
+
     span {
       display: block;
       width: 30px;
@@ -63,6 +73,10 @@
       top: 0;
       transform: rotate(-45deg);
     }
+  }
+  .checkbox-toggle:checked + label em {
+    opacity: 1;
+    left: -60px;
   }
 }
 
@@ -155,7 +169,7 @@
   top: 0;
   left: 0;
   width: 100%;
-  height: 100vh;
+  height: 0vh;
   display: flex;
   .menu-rect {
     width: 25%;
@@ -179,6 +193,7 @@
     }
   }
   &.rects-open {
+    height: 100vh;
     .menu-rect {
       transform: scaleY(1);
     }
