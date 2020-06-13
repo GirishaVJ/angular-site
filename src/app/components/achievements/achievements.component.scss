@@ -27,4 +27,14 @@
 }
 .achievements-gallery-img {
   flex: 0 50%;
+  overflow: hidden;
+  img {
+    transition: all 0.32s;
+  }
+
+  &:hover {
+    img {
+      transform: scale(1.2);
+    }
+  }
 }

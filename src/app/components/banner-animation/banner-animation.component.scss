@@ -1,11 +1,11 @@
 #banner-animation {
   position: fixed;
-  top: 380px;
   height: 150px;
-  right: -550px;
   width: 1500px;
-  //   perspective: 1000px;
-  transform: rotate(50deg);
+  top: 15%;
+  right: -700px;
+  transform: rotate(55deg) scale(0.5);
+  transition: all 0.3s;
 }
 #banner-animation div {
   /* position: relative; */
@@ -331,5 +331,32 @@
   }
   to {
     transform: rotateX(359deg);
+  }
+}
+
+@media (min-width: 576px) {
+  #banner-animation {
+    top: 25%;
+    right: -700px;
+    transform: rotate(55deg) scale(0.7);
+  }
+}
+@media (min-width: 768px) {
+  #banner-animation {
+    top: 25%;
+    right: -600px;
+    transform: rotate(55deg) scale(1);
+  }
+}
+@media (min-width: 992px) {
+  #banner-animation {
+    top: 60%;
+    right: -720px;
+  }
+}
+@media (min-width: 1200px) {
+  #banner-animation {
+    top: 65%;
+    right: -620px;
   }
 }

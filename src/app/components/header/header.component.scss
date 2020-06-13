@@ -7,6 +7,9 @@
 }
 .hambergarmenu {
   float: right;
+  position: absolute;
+  right: 20px;
+  top: 15px;
 }
 .hambergarmenu span {
   width: 35px;
@@ -104,31 +107,31 @@
       height: 99vh;
     }
   }
-  a {
-    &:hover {
-      letter-spacing: 2px;
-    }
-  }
 }
 
 .menu-type1 {
-  width: 50%;
-  padding: 150px 0;
+  padding: 120px 0 20px;
+  position: relative;
   a {
-    font-size: 30px;
+    font-size: 20px;
     font-weight: 600;
     line-height: 2;
   }
   ul {
-    padding-left: 27%;
+    padding-left: 20px;
+  }
+  .menu-bg {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 400px;
   }
 }
 .menu-type2 {
-  width: 50%;
   background: #efefef;
-  padding: 120px 30px;
+  padding: 20px 20px;
   .industries-menu-link {
-    font-size: 30px;
+    font-size: 20px;
     margin-bottom: 20px;
     position: relative;
     &:after {
@@ -144,8 +147,6 @@
 
   ul {
     li {
-      display: inline-block;
-      width: 48%;
       line-height: 2.5;
       .icon {
         margin-right: 15px;
@@ -202,6 +203,40 @@
     .menu-rect {
       transform: scaleY(1);
     }
+  }
+}
+
+@media (min-width: 576px) {
+}
+@media (min-width: 768px) {
+  .menu-type2 {
+    ul {
+      li {
+        display: inline-block;
+        width: 48%;
+        line-height: 2.5;
+      }
+    }
+  }
+}
+@media (min-width: 992px) {
+  .menu-type1 {
+    width: 50%;
+    padding: 120px 20px;
+    li {
+      a {
+        font-size: 30px;
+      }
+    }
+  }
+  .menu-type2 {
+    width: 50%;
+    padding: 120px 20px;
+  }
+}
+@media (min-width: 1200px) {
+  .menu-type1 {
+    padding: 120px 20px 120px 10%;
   }
 }
 

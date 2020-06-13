@@ -95,6 +95,9 @@ h2 {
   line-height: 0.97;
   margin-bottom: 40px;
 }
+img {
+  max-width: 100%;
+}
 p {
   font-size: 18px;
   line-height: 1.73;
@@ -111,15 +114,20 @@ p {
   margin: 0 auto;
 }
 
+.container {
+  max-width: 1200px;
+  width: 100%;
+}
+
 header {
   position: fixed;
   width: 100%;
   padding-top: 50px;
   z-index: 10;
 }
-section {
-  padding-bottom: 50px;
-}
+// section {
+//   padding-bottom: 50px;
+// }
 a {
   position: relative;
   display: inline;

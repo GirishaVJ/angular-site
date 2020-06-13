@@ -1,8 +1,5 @@
 .ganit-banner {
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  padding: 180px 0px 100px;
 
   /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ffffff+0,ffffff+96&0+0,1+96 */
   background: -moz-linear-gradient(
@@ -25,12 +22,53 @@
 .ganit-banner {
   h1 {
     padding-bottom: 20px;
-    width: 60%;
-    font-size: 3.5vw;
+    font-size: 30px;
+    line-height: 1.2;
   }
   p {
-    width: 60%;
-    font-size: 1.5vw;
+    font-size: 18px;
     line-height: 1.5;
   }
+}
+
+@media (min-width: 576px) {
+  .ganit-banner {
+    h1 {
+      font-size: 30px;
+      line-height: 1.2;
+      width: 70%;
+    }
+    p {
+      font-size: 20px;
+      line-height: 1.5;
+      width: 70%;
+    }
+  }
+}
+@media (min-width: 768px) {
+  .ganit-banner {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 0px;
+    h1 {
+      font-size: 40px;
+    }
+    p {
+      font-size: 20px;
+    }
+  }
+}
+@media (min-width: 992px) {
+  .ganit-banner {
+    h1 {
+      font-size: 50px;
+    }
+    p {
+      font-size: 24px;
+    }
+  }
+}
+@media (min-width: 1200px) {
 }
