@@ -14,15 +14,11 @@ import { PennedByOurMindsComponent } from './components/penned-by-our-minds/penn
 import { FooterComponent } from './components/footer/footer.component';
 import { HeaderComponent } from './components/header/header.component';
 
-import { SwiperModule } from 'ngx-swiper-wrapper';
-import { SWIPER_CONFIG } from 'ngx-swiper-wrapper';
-import { SwiperConfigInterface } from 'ngx-swiper-wrapper';
 import { BannerAnimationComponent } from './components/banner-animation/banner-animation.component';
-
-const DEFAULT_SWIPER_CONFIG: SwiperConfigInterface = {
-  direction: 'horizontal',
-  slidesPerView: 'auto',
-};
+import { NewsEventsComponent } from './components/news-events/news-events.component';
+import { OwlComponent } from './components/owl/owl.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { CarouselModule } from 'ngx-owl-carousel-o';
 
 @NgModule({
   declarations: [
@@ -36,13 +32,12 @@ const DEFAULT_SWIPER_CONFIG: SwiperConfigInterface = {
     FooterComponent,
     HeaderComponent,
     BannerAnimationComponent,
+    NewsEventsComponent,
+    OwlComponent
   ],
-  imports: [BrowserModule, AppRoutingModule, FormsModule, SwiperModule],
+  imports: [BrowserModule, AppRoutingModule, FormsModule, BrowserAnimationsModule, CarouselModule],
   providers: [
-    {
-      provide: SWIPER_CONFIG,
-      useValue: DEFAULT_SWIPER_CONFIG,
-    },
+    
   ],
   bootstrap: [AppComponent],
 })
