@@ -25,21 +25,43 @@
     margin-bottom: 30px;
     font-size: 30px;
     line-height: 1.2;
-    .data-animation{
+    .data-animation {
       color: #2489ff;
       position: relative;
-      &::after{
-        content: "1010";
-        position: absolute;
-        left: 0;
-        bottom: -50px;
-        opacity: 0;
-        background-color: #fff;
-        padding-right: 8px;
+      display: inline-block;
+      overflow: hidden;
+      height: 65px;
+      line-height: 1.2;
+      vertical-align: middle;
+      top: -2px;
+      em {
+        display: block;
+        position: relative;
+        color: #2489ff;
+        // top: 0px;
+        // transition: all 0.4s;
+        animation: animateData 5s linear 4s infinite alternate;
       }
+      // &:hover {
+      //   em {
+      //     top: -60px;
+      //   }
+      // }
+      // &:before {
+      //   content: 'data';
+      // }
+      // &::after {
+      //   content: '1010';
+      //   position: absolute;
+      //   left: 0;
+      //   bottom: -50px;
+      //   opacity: 0;
+      //   background-color: #fff;
+      //   padding-right: 8px;
+      // }
       &:last-child {
-        &::after{
-          content:"$$$$$$";
+        &::after {
+          content: '$$$$$$';
         }
       }
       &:hover {
@@ -56,6 +78,24 @@
   p {
     font-size: 18px;
     line-height: 1.5;
+  }
+}
+
+@keyframes animateData {
+  0% {
+    top: 0;
+  }
+  5% {
+    top: -60px;
+  }
+  50% {
+    top: -60px;
+  }
+  55% {
+    top: -0px;
+  }
+  100% {
+    top: -0px;
   }
 }
 
