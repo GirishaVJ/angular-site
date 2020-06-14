@@ -9,6 +9,20 @@
       line-height: 32px;
       font-size: 18px;
       font-weight: 700;
+      position: relative;
+      a {
+        font-size: 22px;
+        font-weight: bold;
+      }
+      &::after {
+        position: absolute;
+        content: "";
+        background: #2489ff;
+        height: 5px;
+        top: 50%;
+        right: 0;
+        left: 100px;
+      }  
     }
     .col-md-9 {
       background-color: #ffffff;
@@ -28,7 +42,8 @@
       font-weight: 600;
       h3 {
         color: #ffffff;
-        font-size: 22px;
+        font-size: 22px; 
+        position: relative;
       }
       p {
         color: #ffffff;
@@ -57,7 +72,10 @@
       .container { 
         .col-md-9 {
           background-color: #ffffff;
-          padding: 0 30px;
+          padding: 0 30px 30px;
+          ul {
+            margin-bottom: 0;
+          }
         }
       }
     }
