@@ -36,6 +36,9 @@
   .footer-bottom-links {
     justify-content: space-evenly;
     display: flex;
+    @media (max-width: 767.98px) {
+      flex-direction: column;
+    }
   }
   .blue-bg {
     background-color: #2489ff;
@@ -44,6 +47,17 @@
     height: 100%;
     top:0;
     right:0;
+  }
+  @media (max-width: 767.98px) {
+    .container-fluid {
+      padding: 0;
+      .container { 
+        .col-md-9 {
+          background-color: #ffffff;
+          padding: 0 30px;
+        }
+      }
+    }
   }
 }
 .copyrights-container {
