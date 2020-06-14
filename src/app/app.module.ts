@@ -9,7 +9,6 @@ import { HomeComponent } from './pages/home/home.component';
 import { BannerComponent } from './components/banner/banner.component';
 import { HightlightsComponent } from './components/hightlights/hightlights.component';
 import { AchievementsComponent } from './components/achievements/achievements.component';
-import { NewsAndEventsComponent } from './components/news-and-events/news-and-events.component';
 import { PennedByOurMindsComponent } from './components/penned-by-our-minds/penned-by-our-minds.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { HeaderComponent } from './components/header/header.component';
@@ -27,18 +26,21 @@ import { CarouselModule } from 'ngx-owl-carousel-o';
     BannerComponent,
     HightlightsComponent,
     AchievementsComponent,
-    NewsAndEventsComponent,
     PennedByOurMindsComponent,
     FooterComponent,
     HeaderComponent,
     BannerAnimationComponent,
     NewsEventsComponent,
-    OwlComponent
+    OwlComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, FormsModule, BrowserAnimationsModule, CarouselModule],
-  providers: [
-    
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    FormsModule,
+    BrowserAnimationsModule,
+    CarouselModule,
   ],
+  providers: [],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
