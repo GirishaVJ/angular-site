@@ -4,18 +4,25 @@
   padding-bottom: 50px;
   .container {
     position: relative;
-    .ganit-minds-image {
-      img {
-        max-width: 100%;
+    .each-minds {
+      padding-bottom: 50px;
+      .ganit-minds-image {
+        margin-bottom: 10px;
+        img {
+          max-width: 100%;
+          transition: all 0.32s;
+          filter: grayscale(100%);
+          &:hover {
+            filter: grayscale(0);
+          }
+        }
+      }
+      p {
+        font-weight: 700;
+        margin-bottom: 30px;
       }
     }
-  }
-  img {
-    transition: all 0.32s;
-    filter: grayscale(100%);
-    &:hover {
-      filter: grayscale(0);
-    }
+
   }
 }
 .download {
