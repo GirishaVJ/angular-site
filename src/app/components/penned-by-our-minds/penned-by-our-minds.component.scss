@@ -1,20 +1,19 @@
 .penned-by-our-minds {
   background-color: #ffffff;
   position: relative;
-  padding-bottom: 50px;
+  padding-bottom: 300px;
   .container {
     position: relative;
+    h2{
+      font-size: 60px;
+      margin-bottom: 60px;
+    }
     .each-minds {
       padding-bottom: 50px;
       .ganit-minds-image {
         margin-bottom: 10px;
         img {
           max-width: 100%;
-          transition: all 0.32s;
-          filter: grayscale(100%);
-          &:hover {
-            filter: grayscale(0);
-          }
         }
       }
       p {
