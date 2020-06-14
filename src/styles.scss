@@ -231,3 +231,9 @@ a.viewall {
   //   background: url('./assets/icons/Group3879.svg') no-repeat center center;
   // }
 }
+.banner-animation {
+  position: absolute !important;
+  right: -25%;
+  transform: rotate(150deg);
+  top: 50%;
+}
