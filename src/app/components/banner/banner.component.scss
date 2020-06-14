@@ -24,13 +24,13 @@
   h1 {
     margin-bottom: 30px;
     font-size: 30px;
-    line-height: 1.2;
+    line-height: 36px;
     .data-animation {
       color: #2489ff;
       position: relative;
       display: inline-block;
       overflow: hidden;
-      height: 50px;
+      height: 36px;
       vertical-align: middle;
       em {
         display: block;
@@ -54,14 +54,14 @@
       //     content: '$$$$$$';
       //   }
       // }
-      &:hover {
-        //color:#ffffff;
-        &::after {
-          opacity: 1;
-          bottom: 0;
-          background-color: #fff;
-        }
-      }
+      // &:hover {
+      //   //color:#ffffff;
+      //   &::after {
+      //     opacity: 1;
+      //     bottom: 0;
+      //     background-color: #fff;
+      //   }
+      // }
     }
   }
   p {
@@ -139,7 +139,7 @@
     h1 {
       font-size: 50px;
       .data-animation {
-        height: 70px;
+        height: 68px;
       }
     }
     p {
