@@ -28,22 +28,32 @@
     .data-animation {
       color: #2489ff;
       position: relative;
-      &::after {
-        content: '1010';
-        position: absolute;
-        left: 0;
-        // bottom: -50px;
-        // opacity: 0;
-        background-color: #fff;
-        padding-right: 8px;
-        transition: all 0.32s;
+      display: inline-block;
+      overflow: hidden;
+      height: 50px;
+      vertical-align: middle;
+      em {
+        display: block;
+        position: relative;
+        color: #2489ff;
+        top: 0;
         animation: animateData 5s linear 2s infinite;
       }
-      &:last-child {
-        &::after {
-          content: '$$$$$$';
-        }
-      }
+      // &::after {
+      //   content: '1010';
+      //   position: absolute;
+      //   left: 0;
+
+      //   background-color: #fff;
+      //   padding-right: 8px;
+      //   transition: all 0.32s;
+      //   animation: animateData 5s linear 2s infinite;
+      // }
+      // &:last-child {
+      //   &::after {
+      //     content: '$$$$$$';
+      //   }
+      // }
       &:hover {
         //color:#ffffff;
         &::after {
@@ -62,17 +72,17 @@
 
 @keyframes animateData {
   0% {
-    opacity: 0;
+    top: 0;
   }
-  20% {
-    opacity: 1;
+  10% {
+    top: -35px;
   }
 
-  80% {
-    opacity: 1;
+  50% {
+    top: -35px;
   }
-  100% {
-    opacity: 0;
+  60% {
+    top: 0;
   }
 }
 
@@ -99,9 +109,28 @@
     padding: 0 0px;
     h1 {
       font-size: 40px;
+      .data-animation {
+        height: 50px;
+      }
     }
     p {
       font-size: 20px;
+    }
+  }
+
+  @keyframes animateData {
+    0% {
+      top: 0;
+    }
+    10% {
+      top: -50px;
+    }
+
+    50% {
+      top: -50px;
+    }
+    60% {
+      top: 0;
     }
   }
 }
@@ -110,9 +139,27 @@
   .ganit-banner {
     h1 {
       font-size: 50px;
+      .data-animation {
+        height: 70px;
+      }
     }
     p {
       font-size: 24px;
+    }
+  }
+  @keyframes animateData {
+    0% {
+      top: 0;
+    }
+    10% {
+      top: -60px;
+    }
+
+    50% {
+      top: -60px;
+    }
+    60% {
+      top: 0;
     }
   }
 }
