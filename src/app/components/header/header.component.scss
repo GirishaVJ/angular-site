@@ -14,7 +14,7 @@
 .hambergarmenu span {
   width: 35px;
   height: 5px;
-  background-color: black;
+  background-color: #fff;
   margin: 6px 0;
   display: block;
 }
@@ -47,21 +47,21 @@
       display: block;
       width: 30px;
       height: 3px;
-      background: #666;
+      background: transparent;
       position: relative;
       transition: all 0.3s;
       &:before,
       &:after {
         position: absolute;
         transition: all 0.3s;
-        top: -8px;
+        top: 0px;
         content: '';
         width: 30px;
-        height: 3px;
+        height: 4px;
         background: #666;
       }
       &:after {
-        top: 8px;
+        top: 10px;
         content: '';
       }
     }

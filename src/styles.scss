@@ -1,6 +1,7 @@
 body {
   background-color: #fff;
   font-family: 'CenturyGothic';
+  font-size: 18px;
 }
 @font-face {
   font-family: 'CenturyGothic';
@@ -140,6 +141,7 @@ a.viewall {
   cursor: pointer;
   font-size: 18px;
   font-weight: 700;
+  min-width: 110px;
   i { 
     opacity: 0;
     transition: 0.5s;
