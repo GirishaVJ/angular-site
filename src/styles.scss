@@ -105,6 +105,10 @@ p {
   color: #2489ff;
   font-weight: 600;
 }
+.clr-black {
+  color: #000000;
+  font-weight: 600;
+}
 .clear-both {
   clear: both;
 }
@@ -244,13 +248,13 @@ a.viewall {
     position: absolute;
     top: 25%;
     z-index: 1;
-    left: -60px;
+    left: -80px;
     &:hover {
       background: none;
     }
     &.owl-next {
       left: auto;
-      right: -60px;
+      right: -80px;
     }
     i {
       &:before {
@@ -270,4 +274,13 @@ a.viewall {
       }
     }
   }
+}
+.owl-carousel .owl-item img {
+  margin-bottom: 30px;
+}
+.each-minds {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-between;
 }

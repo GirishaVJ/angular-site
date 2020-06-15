@@ -31,7 +31,7 @@ export class OwlComponent implements OnInit {
         items: 3,
       },
       940: {
-        items: 4,
+        items: 3,
       },
     },
   };
@@ -39,18 +39,23 @@ export class OwlComponent implements OnInit {
     {
       img: './assets/images/achievements-four.jpg',
       text:
-        '<p>Ganit visits<span class="clr-blue">top engineering & math colleges</span>to recruit fresh & exciting talent</p>',
+        '<p>Ganit visits <span class="clr-black">top Engineering and Math colleges</span> to recruit fresh & exciting talent</p>',
     },
     {
-      img: './assets/images/achievements-four.jpg',
+      img: './assets/images/dr_sinha.jpeg',
       text:
-        '<p>Ganit visits<span class="clr-blue">top engineering & math colleges</span>to recruit fresh & exciting talent</p>',
+        '<p>Welcoming <span class="clr-black">Dr. Sinha</span> to Board of Advisors</p>',
     },
     {
-      img: './assets/images/achievements-four.jpg',
+      img: './assets/images/ganit_Carnival.jpeg',
       text:
-        '<p>Ganit visits<span class="clr-blue">top engineering & math colleges</span>to recruit fresh & exciting talent</p>',
+        '<p>Ganit Carnival: Celebrating Data Science</p>',
     },
+    {
+      img: './assets/images/data_distruption.jpg',
+      text:
+        '<p>Data science disruption has a new epicenter: Ganits new abode</p>',
+    }
   ];
   constructor() {}
 

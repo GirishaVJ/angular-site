@@ -11,7 +11,7 @@
     .each-minds {
       padding-bottom: 50px;
       .ganit-minds-image {
-        margin-bottom: 10px;
+        margin-bottom: 30px;
         img {
           max-width: 100%;
         }
@@ -24,20 +24,18 @@
 
   }
 }
-.download {
-  width: 119px;
-  height: 29px;
+.download {    width: 145px;
+  height: 45px;
   font-size: 18px;
   font-weight: bold;
   font-stretch: normal;
   font-style: normal;
-  line-height: 1.21;
+  line-height: 45px;
   letter-spacing: normal;
   text-align: left;
   color: #ffffff;
   background-color: #2489ff;
-  text-align: center;
-  padding: 10px 0 10px 15px;
+  text-align: center; 
   i { 
     opacity: 0;
     transition: 0.5s;
