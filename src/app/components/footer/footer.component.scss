@@ -5,14 +5,14 @@
   .container-fluid {
     z-index: 1;
     position: relative;
-    h3 {
+    li h3 {
       line-height: 32px;
       font-size: 18px;
       font-weight: 700;
       position: relative;
       a {
-        font-size: 22px;
-        font-weight: bold;
+        font-weight: 700;
+        font-size: 20px;
       }
       &::after {
         position: absolute;
@@ -35,6 +35,8 @@
       }
       a {
         line-height: 40px;
+        font-weight: 400px;
+        font-size: 16px;
       }
     }
     .address {
@@ -42,12 +44,12 @@
       font-weight: 600;
       h3 {
         color: #ffffff;
-        font-size: 22px; 
+        font-size: 20px; 
         position: relative;
       }
       p {
         color: #ffffff;
-        font-size: 18px;
+        font-size: 16px;
       }
     }
   }

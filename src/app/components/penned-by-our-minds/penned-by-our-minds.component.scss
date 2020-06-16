@@ -1,11 +1,11 @@
 .penned-by-our-minds {
   background-color: #ffffff;
   position: relative;
-  padding-bottom: 300px;
+  padding-bottom: 200px;
   .container {
     position: relative;
     h2{
-      font-size: 60px;
+      font-size: 50px;
       margin-bottom: 60px;
     }
     .each-minds {
@@ -24,7 +24,8 @@
 
   }
 }
-.download {    width: 145px;
+.download {    
+  width: 145px;
   height: 45px;
   font-size: 18px;
   font-weight: bold;
@@ -35,21 +36,30 @@
   text-align: left;
   color: #ffffff;
   background-color: #2489ff;
-  text-align: center; 
+  text-align: center;
+  transition: 0.5s;
+  position: relative;
+  overflow: hidden;
   i { 
-    opacity: 0;
+    visibility: hidden;
     transition: 0.5s;
     line-height: 27px;
     margin-left:-5px;
+    position: absolute;
   }
   &:hover {
+    width: 170px;
     color: #ffffff;
     i.icon-arrow-right{ 
       opacity: 1;
       margin-left: 10px;
+      position: absolute;
+      top:20%;
+      visibility: visible;
+      width: 20px;
+      height: 20px;
       &:before{
         color:#ffffff;
-
       }
     }
   }
