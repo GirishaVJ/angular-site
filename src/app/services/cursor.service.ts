@@ -1,4 +1,5 @@
-import { Injectable } from '@angular/core';
+import { Injectable, HostListener } from '@angular/core';
+import sdk from '@stackblitz/sdk';
 
 @Injectable({
   providedIn: 'root',
@@ -7,16 +8,22 @@ export class CursorService {
   top: any;
   left: any;
   display: string;
+  transform = 'scale(1)';
+  opacity = '.5';
   constructor() {}
 
   showCustomCursor(event) {
-    //setTimeout(() => {
     this.top = event.clientY - 10 + 'px';
     this.left = event.clientX - 10 + 'px';
     this.display = 'block';
-    // }, 10);
-
     // console.log(event);
+    if (event.target.nodeName === 'A') {
+      this.transform = 'scale(3)';
+      this.opacity = '.4';
+    } else {
+      this.opacity = '0';
+      this.transform = 'scale(1)';
+    }
   }
 
   hideCusromCursor(event) {
@@ -27,5 +34,10 @@ export class CursorService {
   //   console.log($event);
   //   this.top = $event.clientY - 10 + 'px';
   //   this.left = $event.clientX - 10 + 'px';
+  // }
+
+  // @HostListener('document:click', ['$event'])
+  // onClick($event) {
+  //   console.log($event);
   // }
 }

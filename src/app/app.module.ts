@@ -4,6 +4,7 @@ import { FormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { CursorService } from './services/cursor.service';
 
 import { HomeComponent } from './pages/home/home.component';
 import { BannerComponent } from './components/banner/banner.component';
@@ -40,7 +41,7 @@ import { CarouselModule } from 'ngx-owl-carousel-o';
     BrowserAnimationsModule,
     CarouselModule,
   ],
-  providers: [],
+  providers: [CursorService],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

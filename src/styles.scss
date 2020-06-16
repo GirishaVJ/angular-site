@@ -289,11 +289,12 @@ a.viewall {
 .cursor {
   width: 20px;
   height: 20px;
-  background: red;
-  border: 1px solid red;
+  background: #007bff;
+  border: 1px solid #007bff;
   border-radius: 50%;
   position: fixed;
   transition: all 200ms ease-out;
   pointer-events: none;
-  display: none;
+  // display: none;
+  z-index: 100;
 }
