@@ -1,4 +1,8 @@
-<section class="ganit-achievements" (mousemove)="crsr.showCustomCursor($event)">
+<section
+  class="ganit-achievements"
+  (mousemove)="crsr.showCustomCursor($event)"
+  (mouseout)="crsr.hideCusromCursor($event)"
+>
   <div class="container-fluid">
     <div class="row">
       <div class="col-md-6">
@@ -53,5 +57,10 @@
     </div>
   </div>
 
-  <div class="cursor" [style.top]="crsr.top" [style.left]="crsr.left"></div>
+  <div
+    class="cursor"
+    [style.display]="crsr.display"
+    [style.top]="crsr.top"
+    [style.left]="crsr.left"
+  ></div>
 </section>
