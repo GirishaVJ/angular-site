@@ -1,7 +1,7 @@
 .ganit-achievements {
   background: #fff;
   position: relative;
-  padding-bottom:200px;
+  padding-bottom: 200px;
   .ganit-achievements-content {
     display: flex;
     flex-direction: column;
@@ -71,7 +71,7 @@
       transform: scale(1.2);
     }
   }
-  &:last-child{
+  &:last-child {
     flex: 0 100%;
   }
 }
