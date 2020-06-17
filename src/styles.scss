@@ -290,11 +290,29 @@ a.viewall {
   width: 15px;
   height: 15px;
   background: #007bff;
-  //border: 1px solid #007bff;
   border-radius: 50%;
   position: fixed;
   transition: all 200ms ease-out;
   pointer-events: none;
-  // display: none;
   z-index: 100;
+  &:before {
+    content: '';
+    position: absolute;
+    border-radius: 50%;
+    left: 0;
+    top: 0;
+    width: 15px;
+    height: 15px;
+    transform: scale(1);
+    background: #007bff;
+    opacity: 0;
+    transition: all 200ms ease-out;
+  }
+
+  &.zoom {
+    &:before {
+      transform: scale(5);
+      opacity: 0.4;
+    }
+  }
 }

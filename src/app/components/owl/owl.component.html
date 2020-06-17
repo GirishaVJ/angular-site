@@ -1,6 +1,8 @@
-<div class="container"
-(mousemove)="crsr.showCustomCursor($event)"
-  (mouseout)="crsr.hideCusromCursor($event)">
+<div
+  class="container"
+  (mousemove)="crsr.showCustomCursor($event)"
+  (mouseout)="crsr.hideCusromCursor($event)"
+>
   <owl-carousel-o [options]="customOptions">
     <ng-container *ngFor="let slide of slides">
       <ng-template carouselSlide>
@@ -13,10 +15,10 @@
       </ng-template>
     </ng-container>
   </owl-carousel-o>
-  <div
+  <!-- <div
   class="cursor"
   [style.display]="crsr.display"
   [style.top]="crsr.top"
   [style.left]="crsr.left"
-></div>
+></div> -->
 </div>

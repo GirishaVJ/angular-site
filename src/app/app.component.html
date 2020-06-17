@@ -3,9 +3,9 @@
 <router-outlet></router-outlet>
 <app-footer></app-footer>
 <div
-  class="cursor"
-  [style.transform]="crsr.transform"
-  [style.opacity]="crsr.opacity"
+  class="cursor zoom"
+  [ngClass]="{ zoom: crsr.isHyperlink }"
+  [style.display]="crsr.display"
   [style.top]="crsr.top"
   [style.left]="crsr.left"
 ></div>

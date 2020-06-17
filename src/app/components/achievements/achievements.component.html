@@ -1,64 +1,62 @@
-<section
-  class="ganit-achievements">
+<section class="ganit-achievements">
   <div class="container-fluid">
     <div class="row">
       <div class="col-md-6">
         <div class="ganit-achievements-gallery">
           <div class="achievements-gallery-img">
-            <img src="./assets/images/achievements-four.jpg" alt="" title=""
-            />
+            <img src="./assets/images/achievements-four.jpg" alt="" title="" />
           </div>
           <div class="achievements-gallery-img">
-            <img src="./assets/images/achievements-one.jpg" alt="" title=""
-            />
-          </div>
-          <div class="achievements-gallery-img"><img
-                src="./assets/images/achievements-three.jpg"
-                alt=""
-                title=""
-            />
+            <img src="./assets/images/achievements-one.jpg" alt="" title="" />
           </div>
           <div class="achievements-gallery-img">
-            <img src="./assets/images/achievements-two.jpg" alt="" title=""
-            />
+            <img src="./assets/images/achievements-three.jpg" alt="" title="" />
           </div>
           <div class="achievements-gallery-img">
-              <img src="./assets/images/achievements-five.jpg" alt="" title=""
-            />
+            <img src="./assets/images/achievements-two.jpg" alt="" title="" />
+          </div>
+          <div class="achievements-gallery-img">
+            <img src="./assets/images/achievements-five.jpg" alt="" title="" />
           </div>
         </div>
       </div>
       <div class="col-md-6">
         <div class="ganit-achievements-content pt-4">
           <h2>Why Clients Prefer Us?</h2>
-          <div 
+          <div
             (mousemove)="crsr.showCustomCursor($event)"
             (mouseout)="crsr.hideCusromCursor($event)"
           >
-             <a href="#"><span class="icon achievements-one"></span>
-            A Large CPG company adds
-            <span class="clr-blue">200 bps to bottom-line</span> using
-            <span class="clr-blue">our price optimization</span> solution</a>
+            <a href="#"
+              ><span class="icon achievements-one"></span>
+              A Large CPG company adds
+              <span class="clr-blue">200 bps to bottom-line</span> using
+              <span class="clr-blue">our price optimization</span> solution</a
+            >
           </div>
-          <div 
+          <div
             (mousemove)="crsr.showCustomCursor($event)"
             (mouseout)="crsr.hideCusromCursor($event)"
           >
-            <a href="#"><span class="icon achievements-two"></span>
-            A large retailer saves
-            <span class="clr-blue">31% of a daily dump</span> in a fresh
-            category using
-            <span class="clr-blue">our sales forecasting</span> solution</a>
+            <a href="#"
+              ><span class="icon achievements-two"></span>
+              A large retailer saves
+              <span class="clr-blue">31% of a daily dump</span> in a fresh
+              category using
+              <span class="clr-blue">our sales forecasting</span> solution</a
+            >
           </div>
-          <div 
+          <div
             (mousemove)="crsr.showCustomCursor($event)"
             (mouseout)="crsr.hideCusromCursor($event)"
           >
-            <a href="#"><span class="icon achievements-three"></span>
-            A large CPG company Increased cross-sell propensity by
-            <span class="clr-blue">40% at a large consumer products</span>
-            company using personalized recommendation engines A
-            <span class="clr-blue">large retailer</span> saves</a>
+            <a href="#"
+              ><span class="icon achievements-three"></span>
+              A large CPG company Increased cross-sell propensity by
+              <span class="clr-blue">40% at a large consumer products</span>
+              company using personalized recommendation engines A
+              <span class="clr-blue">large retailer</span> saves</a
+            >
           </div>
           <div class="view-all-link">
             <a class="viewall" href="#"
@@ -69,11 +67,4 @@
       </div>
     </div>
   </div>
-
-  <div
-    class="cursor"
-    [style.display]="crsr.display"
-    [style.top]="crsr.top"
-    [style.left]="crsr.left"
-  ></div>
 </section>
