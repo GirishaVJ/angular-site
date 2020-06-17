@@ -287,10 +287,10 @@ a.viewall {
 }
 
 .cursor {
-  width: 20px;
-  height: 20px;
+  width: 15px;
+  height: 15px;
   background: #007bff;
-  border: 1px solid #007bff;
+  //border: 1px solid #007bff;
   border-radius: 50%;
   position: fixed;
   transition: all 200ms ease-out;

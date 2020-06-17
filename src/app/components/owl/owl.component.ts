@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { OwlOptions } from 'ngx-owl-carousel-o';
+import { CursorService } from '../../services/cursor.service';
 
 @Component({
   selector: 'app-owl',
@@ -39,25 +40,27 @@ export class OwlComponent implements OnInit {
     {
       img: './assets/images/achievements-four.jpg',
       text:
-        '<p>Ganit visits <span class="clr-black">top Engineering and Math colleges</span> to recruit fresh & exciting talent</p>',
+        'Ganit visits <span class="clr-black">top Engineering and Math colleges</span> to recruit fresh & exciting talent',
     },
     {
       img: './assets/images/dr_sinha.jpeg',
       text:
-        '<p>Welcoming <span class="clr-black">Dr. Sinha</span> to Board of Advisors</p>',
+        'Welcoming <span class="clr-black">Dr. Sinha</span> to Board of Advisors',
     },
     {
       img: './assets/images/ganit_Carnival.jpeg',
       text:
-        '<p>Ganit Carnival: Celebrating Data Science</p>',
+        'Ganit Carnival: Celebrating Data Science',
     },
     {
       img: './assets/images/data_distruption.jpg',
       text:
-        '<p>Data science disruption has a new epicenter: Ganits new abode</p>',
+        'Data science disruption has a new epicenter: Ganits new abode',
     }
   ];
-  constructor() {}
+  constructor(public crsr: CursorService) {
+
+  }
 
   ngOnInit(): void {}
 }

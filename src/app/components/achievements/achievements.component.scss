@@ -15,6 +15,9 @@
       position: relative;
       padding: 15px 250px 0 100px;
       font-size: 20px;
+      a{
+        display: inline-block;
+      }
       @media (max-width: 1200px) {
         padding: 20px 30px 0 100px;
         min-height: 100px;
