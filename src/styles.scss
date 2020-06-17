@@ -299,10 +299,10 @@ a.viewall {
     content: '';
     position: absolute;
     border-radius: 50%;
-    left: 0;
-    top: 0;
-    width: 15px;
-    height: 15px;
+    left: -1px;
+    top: -1px;
+    width: 16px;
+    height: 16px;
     transform: scale(1);
     background: #007bff;
     opacity: 0;
