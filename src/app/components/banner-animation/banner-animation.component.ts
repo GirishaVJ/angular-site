@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { CursorService } from 'src/app/services/cursor.service';
 
 @Component({
   selector: 'app-banner-animation',
@@ -7,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BannerAnimationComponent implements OnInit {
 
-  constructor() { }
+  constructor(public crsc:CursorService) { }
 
   ngOnInit(): void {
   }
