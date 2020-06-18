@@ -8,8 +8,8 @@ export class CursorService {
   left: any;
   display: string;
   pos1: any;
-  fixedElementFlag=false;
-  footerHight=0;
+  fixedElementFlag = false;
+  footerHight = 0;
 
   isHyperlink = false;
   constructor() {
@@ -18,10 +18,10 @@ export class CursorService {
 
   scroll = (event): void => {
     this.pos1 = Number(event.srcElement.scrollingElement.scrollTop * 0.5);
-    if(event.srcElement.scrollingElement.scrollTop>400) {
-      this.fixedElementFlag=true;
+    if (event.srcElement.scrollingElement.scrollTop > 400) {
+      this.fixedElementFlag = true;
     } else {
-      this.fixedElementFlag=false;
+      this.fixedElementFlag = false;
     }
   };
 
