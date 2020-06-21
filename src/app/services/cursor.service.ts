@@ -18,7 +18,7 @@ export class CursorService {
 
   scroll = (event): void => {
     this.pos1 = Number(event.srcElement.scrollingElement.scrollTop * 0.5);
-    if (event.srcElement.scrollingElement.scrollTop > 400) {
+    if (event.srcElement.scrollingElement.scrollTop > 700) {
       this.fixedElementFlag = true;
     } else {
       this.fixedElementFlag = false;
