@@ -325,3 +325,51 @@ a.viewall {
   height: 100px;
   background-color: green;
 }
+//color Variables
+$ganitBlue:#2489ff;
+$ganitWhite:#ffffff;
+$ganitBlue:#2489ff;
+$componentsGap:200px;
+//inner page css
+.components-gap {
+  padding-bottom:$componentsGap;
+}
+.internal-page-container {
+  background-color: $ganitWhite;
+  .inner-page-banner {
+    height: 100vh;
+    position: relative;
+    .banner-watermark {
+      position: absolute;
+      top: 50%;
+      right: 0;
+      font-size: 150px;
+      transform: translateY(-50%);
+      opacity: 0.2;
+      span {
+        font-family: CenturyGothic;
+        font-size: 160px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 0.38;
+        letter-spacing: normal;
+        text-align: left;
+        color: #ffffff;
+        text-shadow: 0 0 3px #343434;
+      }
+    }
+    .container {
+      height: 100%;
+      .row {
+        height: 100%;
+        .col-md-6 {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          height: 100%;
+        }
+      }
+    }
+  }
+}
