@@ -21,6 +21,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { CarouselModule } from 'ngx-owl-carousel-o';
 import { ParallaxDirective } from './services/parallax.directive';
 import { NewsAndEventsComponent } from './pages/news-and-events/news-and-events.component';
+import { NewsDetailsComponent } from './pages/news-details/news-details.component';
 
 @NgModule({
   declarations: [
@@ -37,6 +38,7 @@ import { NewsAndEventsComponent } from './pages/news-and-events/news-and-events.
     OwlComponent,
     ParallaxDirective,
     NewsAndEventsComponent,
+    NewsDetailsComponent,
   ],
   imports: [
     BrowserModule,

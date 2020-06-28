@@ -14,19 +14,57 @@
             left: -150px;
             background-color:#ffffff;
             padding:20px 0 20px 20px;
-            border-left:10px solid #2489ff;
-            border-top:10px solid #2489ff;
+            min-height: 300px;
+            &:before {
+                border-top:10px solid #2489ff;    
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100px;
+            }
+            &:after {
+                border-left:10px solid #2489ff;    
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 10px;
+                height:300px;
+            }
         }
     }
     &.add {
+        .col-md-6{
+            &:first-child {
+                position: relative;
+                z-index: 1;
+            }
+        }
         .nws-evnt-title {
             position: relative;
             margin-right:-150px;
             background-color:#ffffff;
             padding:20px 20px 20px 0;
-            border-right:10px solid #2489ff;
-            border-top:10px solid #2489ff;
             z-index: 1;
+            min-height: 300px;
+            &:before {
+                border-top:10px solid #2489ff;    
+                content: "";
+                position: absolute;
+                top: 0;
+                right: 0;
+                width: 120px;
+            }
+            &:after {
+                border-right:10px solid #2489ff;    
+                content: "";
+                position: absolute;
+                top: 0;
+                right: 0;
+                width: 10px;
+                height:300px;
+            }
         }
     }
 }
