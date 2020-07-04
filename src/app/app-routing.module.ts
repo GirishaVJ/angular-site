@@ -10,18 +10,18 @@ import { ServicesComponent } from './pages/services/services.component';
 import { AchievementsComponent } from './pages/achievements/achievements.component';
 
 const routes: Routes = [
-  {path:"home",component:HomeComponent},
-  {path:"news-and-events", component:NewsAndEventsComponent},
-  {path:"news-details", component:NewsDetailsComponent},
-  {path:"careers", component:CareersComponent},
-  {path:"career-details", component:CareerDetailsComponent},
-  {path:"products", component:ProductsComponent},
-  {path:"services", component:ServicesComponent},
-  {path:"achievments", component:AchievementsComponent}
+  { path: 'home', component: HomeComponent },
+  { path: 'news-and-events', component: NewsAndEventsComponent },
+  { path: 'news-details/:id', component: NewsDetailsComponent },
+  { path: 'careers', component: CareersComponent },
+  { path: 'career-details', component: CareerDetailsComponent },
+  { path: 'products', component: ProductsComponent },
+  { path: 'services', component: ServicesComponent },
+  { path: 'achievments', component: AchievementsComponent },
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}

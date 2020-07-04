@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-header',
@@ -7,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
   toggleMenu = null;
-  constructor() {
+  constructor(private router: Router) {
     this.pageScroll();
   }
 
@@ -24,5 +25,10 @@ export class HeaderComponent implements OnInit {
       }
       prevScrollpos = currentScrollPos;
     };
+  }
+
+  redirect(page) {
+    this.router.navigate([page]);
+    this.toggleMenu = false;
   }
 }

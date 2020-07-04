@@ -1,6 +1,6 @@
 <header>
   <div class="container menu-header">
-    <div class="ganit-logo" id="logo">Ganit</div>
+    <div class="ganit-logo" id="logo" (click)="redirect('home')">Ganit</div>
     <div class="hambergarmenu">
       <input
         class="checkbox-toggle"
@@ -15,11 +15,13 @@
     <div class="d-lg-flex justify-content-around menu-container">
       <div class="menu-type1 flex-fill">
         <ul>
-          <li><a href="#">Services</a></li>
+          <li>
+            <a (click)="redirect('services')">Services</a>
+          </li>
           <li><a href="#">Platforms</a></li>
-          <li><a href="#">Careers</a></li>
-          <li><a href="#">Geekbar</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a (click)="redirect('careers')">Careers</a></li>
+          <li><a>Geekbar</a></li>
+          <li><a>Contact</a></li>
         </ul>
         <app-banner-animation></app-banner-animation>
       </div>

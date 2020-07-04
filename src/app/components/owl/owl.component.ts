@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { OwlOptions } from 'ngx-owl-carousel-o';
 import { CursorService } from '../../services/cursor.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-owl',
@@ -38,29 +39,33 @@ export class OwlComponent implements OnInit {
   };
   slides = [
     {
+      id: 1,
       img: './assets/images/achievements-four.jpg',
       text:
         'Ganit visits <span class="clr-black">top Engineering and Math colleges</span> to recruit fresh & exciting talent',
     },
     {
+      id: 2,
       img: './assets/images/dr_sinha.jpeg',
       text:
         'Welcoming <span class="clr-black">Dr. Sinha</span> to Board of Advisors',
     },
     {
+      id: 3,
       img: './assets/images/ganit_Carnival.jpeg',
-      text:
-        'Ganit Carnival: Celebrating Data Science',
+      text: 'Ganit Carnival: Celebrating Data Science',
     },
     {
+      id: 4,
       img: './assets/images/data_distruption.jpg',
-      text:
-        'Data science disruption has a new epicenter: Ganits new abode',
-    }
+      text: 'Data science disruption has a new epicenter: Ganits new abode',
+    },
   ];
-  constructor(public crsr: CursorService) {
-
-  }
+  constructor(public crsr: CursorService, public router: Router) {}
 
   ngOnInit(): void {}
+
+  showDetails(id) {
+    this.router.navigate(['/news-details', id]);
+  }
 }

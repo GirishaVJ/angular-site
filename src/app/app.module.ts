@@ -13,6 +13,7 @@ import { AchievementsComponent } from './components/achievements/achievements.co
 import { PennedByOurMindsComponent } from './components/penned-by-our-minds/penned-by-our-minds.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { HeaderComponent } from './components/header/header.component';
+import { TabsModule } from 'ngx-bootstrap/tabs';
 
 import { BannerAnimationComponent } from './components/banner-animation/banner-animation.component';
 import { NewsEventsComponent } from './components/news-events/news-events.component';
@@ -56,6 +57,7 @@ import { ProductsComponent } from './pages/products/products.component';
     FormsModule,
     BrowserAnimationsModule,
     CarouselModule,
+    TabsModule.forRoot(),
   ],
   providers: [CursorService],
   bootstrap: [AppComponent],
