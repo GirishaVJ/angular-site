@@ -22,6 +22,11 @@ import { CarouselModule } from 'ngx-owl-carousel-o';
 import { ParallaxDirective } from './services/parallax.directive';
 import { NewsAndEventsComponent } from './pages/news-and-events/news-and-events.component';
 import { NewsDetailsComponent } from './pages/news-details/news-details.component';
+import { CareersComponent } from './pages/careers/careers.component';
+import { CareerDetailsComponent } from './pages/career-details/career-details.component';
+import { IndustriesComponent } from './pages/industries/industries.component';
+import { ServicesComponent } from './pages/services/services.component';
+import { ProductsComponent } from './pages/products/products.component';
 
 @NgModule({
   declarations: [
@@ -39,6 +44,11 @@ import { NewsDetailsComponent } from './pages/news-details/news-details.componen
     ParallaxDirective,
     NewsAndEventsComponent,
     NewsDetailsComponent,
+    CareersComponent,
+    CareerDetailsComponent,
+    IndustriesComponent,
+    ServicesComponent,
+    ProductsComponent,
   ],
   imports: [
     BrowserModule,

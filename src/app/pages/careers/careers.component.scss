@@ -1,0 +1,85 @@
+.job-openings {
+    .post-filter {
+        color: #111111;
+        font-weight: 700;
+        margin-bottom: 50px;
+        span {
+            color: #969696;
+            padding-left: 15px;
+            position: relative;
+            &:before {  
+                content: "|";
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100px;
+            }
+        }
+        select {
+            float: right;
+            width: 200px;
+            line-height: 40px;
+            height: 40px;
+            padding: 0 15px;
+        }
+
+    }
+    .job-posts-container {
+        .job-posts {
+            padding: 20px;
+            border: 1px solid #f7f7f7;
+            margin-bottom: 30px;
+            h3 {
+                font-size: 18px;
+                font-weight: 700;
+                margin-bottom: 15px;
+                color: #2489ff;
+            }
+            p {
+                margin-bottom: 20px;
+                font-size: 20px;
+                color: #111111;
+                font-weight: 700;
+                &.job-location { 
+                    color: #111111;
+                    margin-bottom: 30px;
+                    font-size: 14px;
+                    font-weight: 400;
+                }
+            }
+            &:hover {
+                border: 1px solid #2489ff;
+            }
+        }
+    }
+    .post-video {
+        position: relative;
+        padding-bottom: 10px;
+        &:before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 150px;
+            height: 250px;
+            background: #2489ff;
+            z-index: 0;
+        }
+        &:after {
+            content: "";
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            width: 150px;
+            height: 250px;
+            background: #2489ff;
+            z-index: 0;
+        }
+        img {
+            width: calc(100% - 20px);
+            margin:10px 0 0 10px;
+            position: relative;
+            z-index: 1;
+        }
+    }
+}

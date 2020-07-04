@@ -1,0 +1,96 @@
+.page-products {
+    .product-tabs {
+        text-align: center;
+        margin-bottom: 50px;
+        span {
+            margin-right: 100px;
+            &.active {
+                color: #2489ff;
+                font-size: 28px;
+                font-weight: 700;
+                border-bottom: 3px solid #2489ff;;
+            }
+        }
+    }
+    .col-md-8 {
+        margin: 0 auto;
+        .product-snppets {
+            position: relative;
+            padding: 80px;
+            margin-bottom: 100px;
+            box-shadow: 0 10px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19) !important;
+            .highlights {
+                position: absolute;
+                left: -150px;
+                top: 50%;
+                transform: translateY(-50%);
+                width: 200px;
+                height: 200px;
+                background-color: #006090;
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                text-align: center;
+                color: #ffffff;
+            }
+            h2 {
+                color: #006090;
+                font-size: 28px;
+                font-weight: 700;
+                margin-bottom: 30px;
+            }
+            li {
+                margin-bottom: 15px;    
+                font-size: 16px;
+                font-weight: 700;
+                position: relative;
+                padding-left: 25px;
+                &::before {
+                    position: absolute;
+                    content: "";
+                    left: 0;
+                    top: 12px;
+                    width: 15px;
+                    height: 3px;
+                    background-color: #006090;
+                }
+                span {
+                    font-size: 12px;
+                    color: #006090;
+                }
+            }
+        }
+        &:nth-child(even) {
+            .product-snppets {
+                .highlights {
+                    background-color: #ffc300;
+                    left: auto;
+                    right: -120px;
+                }
+                h2 {
+                    color: #ffc300;
+                }
+                li {
+                    &::before {
+                        background-color: #ffc300;
+                    }
+                }
+            }
+        }
+        &:nth-child(4n) {
+            .product-snppets {
+                .highlights {
+                    background-color: #f7a268;
+                }
+                h2 {
+                    color: #f7a268;
+                }
+                li {
+                    &::before {
+                        background-color: #f7a268;
+                    }
+                }
+            }
+        }
+    }
+}
