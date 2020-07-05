@@ -8,11 +8,17 @@ import { Router } from '@angular/router';
 })
 export class HeaderComponent implements OnInit {
   toggleMenu = null;
+  windowHeight = null;
   constructor(private router: Router) {
+    window.onload = () => {};
+
     this.pageScroll();
   }
 
-  ngOnInit() {}
+  ngOnInit() {
+    this.windowHeight = window.innerHeight;
+    console.log(this.windowHeight);
+  }
 
   pageScroll() {
     let prevScrollpos = window.pageYOffset;
@@ -24,11 +30,27 @@ export class HeaderComponent implements OnInit {
         document.getElementById('logo').style.opacity = '0';
       }
       prevScrollpos = currentScrollPos;
+
+      //down arrow
+
+      if (window.pageYOffset > 100) {
+        document.getElementById('scroll-arrow').style.opacity = '0';
+      } else {
+        document.getElementById('scroll-arrow').style.opacity = '1';
+      }
     };
   }
 
   redirect(page) {
     this.router.navigate([page]);
     this.toggleMenu = false;
+  }
+
+  onPageScrollClick() {
+    window.scroll({
+      top: this.windowHeight - 10,
+      left: 0,
+      behavior: 'smooth',
+    });
   }
 }

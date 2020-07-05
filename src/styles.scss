@@ -453,3 +453,40 @@ $componentsGap: 200px;
     padding-left: 30px;
   }
 }
+
+.scroll-down-arrow {
+  position: fixed;
+  bottom: 5%;
+  width: 100px;
+  left: 50%;
+  margin-left: -50px;
+  text-align: center;
+  font-size: 0.8rem;
+  animation: bounce 1s 2s infinite;
+  cursor: pointer;
+  z-index: 100;
+  span {
+    padding-top: 0.6rem;
+    display: block;
+    font-weight: bold;
+    color: #2489ff;
+  }
+}
+
+@keyframes bounce {
+  0% {
+    bottom: 3%;
+  }
+  70% {
+    bottom: 6%;
+  }
+  80% {
+    bottom: 3%;
+  }
+  90% {
+    bottom: 4%;
+  }
+  100% {
+    bottom: 3%;
+  }
+}
