@@ -1,39 +1,62 @@
-.page-achievements {    
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin-bottom: 30px;
-    .achievement-snippet {
-        flex: 0 48.5%;
-        border: 5px solid #fafafa;
-        padding: 30px;
-        margin-bottom:200px;
-        position: relative;
-        z-index: 1;
-        &:nth-child(3n) {
-            flex: 0 100%;
-        }
-        h2 {
-            font-size: 28px;
-            margin-bottom: 20px;
-            line-height: 45px;
-        }
-        &:before {
-            border-top:5px solid #2489ff;    
-            content: "";
-            position: absolute;
-            top: -5px;
-            left: -5px;
-            width: 100px;
-        }
-        &:after {
-            border-left:5px solid #2489ff;    
-            content: "";
-            position: absolute;
-            top: -5px;
-            left: -5px;
-            width: 5px;
-            height:200px;
-        }
+.page-achievements {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 30px;
+  .achievement-snippet {
+    flex: 0 48.5%;
+    padding: 5px;
+    margin-bottom: 200px;
+    position: relative;
+    z-index: 1;
+    box-shadow: 0 0 0px 5px #ccc inset;
+
+    .inner {
+      padding: 30px;
+      background: #fff;
+      z-index: 2;
+      position: relative;
     }
+    &:nth-child(3n) {
+      flex: 0 100%;
+    }
+    h2 {
+      font-size: 28px;
+      margin-bottom: 20px;
+      line-height: 45px;
+    }
+    &:before {
+      content: '';
+      border: 5px solid #2489ff;
+      width: 100px;
+      height: 200px;
+      top: 0;
+      left: 0;
+      position: absolute;
+      transition: all 0.5s;
+    }
+    &:hover {
+      &:before {
+        width: 100%;
+        height: 100%;
+      }
+    }
+    // &:before {
+    //     border-top:5px solid #2489ff;
+    //     content: "";
+    //     position: absolute;
+    //     top: -5px;
+    //     left: -5px;
+    //     width: 100px;
+    // }
+    // &:after {
+    //     border-left:5px solid #2489ff;
+    //     content: "";
+    //     position: absolute;
+    //     top: -5px;
+    //     left: -5px;
+    //     width: 5px;
+    //     height:200px;
+    // }
+  }
 }
