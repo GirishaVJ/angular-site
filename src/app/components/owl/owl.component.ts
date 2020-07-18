@@ -65,7 +65,7 @@ export class OwlComponent implements OnInit {
 
   ngOnInit(): void {}
 
-  showDetails(id) {
-    this.router.navigate(['/news-details', id]);
+  showDetails() {
+    this.router.navigate(['/news-details']);
   }
 }

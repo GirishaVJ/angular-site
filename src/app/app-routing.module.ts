@@ -12,7 +12,7 @@ import { AchievementsComponent } from './pages/achievements/achievements.compone
 const routes: Routes = [
   { path: 'home', component: HomeComponent },
   { path: 'news-and-events', component: NewsAndEventsComponent },
-  { path: 'news-details/:id', component: NewsDetailsComponent },
+  { path: 'news-details', component: NewsDetailsComponent },
   { path: 'careers', component: CareersComponent },
   { path: 'career-details', component: CareerDetailsComponent },
   { path: 'products', component: ProductsComponent },
