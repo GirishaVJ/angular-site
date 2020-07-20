@@ -2,13 +2,13 @@
   style="position: relative; z-index: 2;"
   [style.margin-bottom.px]="crsr.footerHight"
 >
-  <app-header></app-header>
   <main [@fadeAnimation]="o.isActivated ? o.activatedRoute : ''">
+    <app-header></app-header>
     <router-outlet #o="outlet"></router-outlet>
   </main>
   <!-- <router-outlet></router-outlet> -->
 </div>
-<app-footer></app-footer>
+<!-- <app-footer></app-footer> -->
 <div
   class="cursor"
   [ngClass]="{ zoom: crsr.isHyperlink }"
