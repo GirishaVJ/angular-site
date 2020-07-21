@@ -1,6 +1,14 @@
 <section class="internal-page-container">
   <div class="inner-page-banner">
-    <div class="banner-watermark">Servi<span>ces</span></div>
+    <div
+      class="banner-watermark"
+      [ngStyle]="{
+        'right.px': crsr.titleScrollPosition.top,
+        'font-size.px': crsr.titleScrollPosition.top
+      }"
+    >
+      Servi<span>ces</span>
+    </div>
     <div class="container">
       <div class="row">
         <div class="col-md-6">
@@ -22,42 +30,63 @@
         </ng-template>
         <div>
           <h2>Overview</h2>
-          <p>We as Ganitans believe that true business impact can be realized 
-            by achieving an incremental value for each decision made.
+          <p>
+            We as Ganitans believe that true business impact can be realized by
+            achieving an incremental value for each decision made.
           </p>
           <h2>Categories</h2>
-          <p>We as Ganitans believe that true business impact can be realized 
-            by achieving an incremental value for each decision made.
+          <p>
+            We as Ganitans believe that true business impact can be realized by
+            achieving an incremental value for each decision made.
           </p>
           <h2>Impact stories</h2>
-          <p>We as Ganitans believe that true business impact can be realized 
-            by achieving an incremental value for each decision made.
+          <p>
+            We as Ganitans believe that true business impact can be realized by
+            achieving an incremental value for each decision made.
           </p>
           <h2>Featured projects</h2>
-          <p>We as Ganitans believe that true business impact can be realized 
-            by achieving an incremental value for each decision made.
+          <p>
+            We as Ganitans believe that true business impact can be realized by
+            achieving an incremental value for each decision made.
           </p>
-          <div  class="service-featured-projects">
+          <div class="service-featured-projects">
             <h2>Featured projects</h2>
             <div class="container">
               <div class="row">
                 <div class="col-md-6">
                   <div class="each-minds">
-                    <div class="ganit-minds-image"><img src="./assets/images/risenfallofcovid19.jpg" alt="" title=""></div>
-                    <p>The raise and fall of COVID - what the numbers tell us?</p>
-                    <a class="download" href="#">Download<i class="icon icon-arrow-right"></i></a>
+                    <div class="ganit-minds-image">
+                      <img
+                        src="./assets/images/risenfallofcovid19.jpg"
+                        alt=""
+                        title=""
+                      />
+                    </div>
+                    <p>
+                      The raise and fall of COVID - what the numbers tell us?
+                    </p>
+                    <a class="download" href="#"
+                      >Download<i class="icon icon-arrow-right"></i
+                    ></a>
                   </div>
                 </div>
                 <div class="col-md-6">
                   <div class="each-minds">
-                    <div class="ganit-minds-image"><img src="./assets/images/Jobdescription.jpg" alt="" title=""></div>
+                    <div class="ganit-minds-image">
+                      <img
+                        src="./assets/images/Jobdescription.jpg"
+                        alt=""
+                        title=""
+                      />
+                    </div>
                     <p>Should Data Scientist have a JD?</p>
-                    <a class="download" href="#">Download<i class="icon icon-arrow-right"></i></a>
+                    <a class="download" href="#"
+                      >Download<i class="icon icon-arrow-right"></i
+                    ></a>
                   </div>
                 </div>
               </div>
             </div>
-
           </div>
         </div>
       </tab>

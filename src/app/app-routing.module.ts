@@ -8,6 +8,7 @@ import { CareerDetailsComponent } from './pages/career-details/career-details.co
 import { ProductsComponent } from './pages/products/products.component';
 import { ServicesComponent } from './pages/services/services.component';
 import { AchievementsComponent } from './pages/achievements/achievements.component';
+import { PageNotFountComponent } from './pages/page-not-fount/page-not-fount.component';
 
 const routes: Routes = [
   { path: 'home', component: HomeComponent },
@@ -18,6 +19,8 @@ const routes: Routes = [
   { path: 'products', component: ProductsComponent },
   { path: 'services', component: ServicesComponent },
   { path: 'achievments', component: AchievementsComponent },
+  { path: '', redirectTo: '/home', pathMatch: 'full' },
+  { path: '**', component: PageNotFountComponent },
 ];
 
 @NgModule({

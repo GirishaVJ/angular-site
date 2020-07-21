@@ -125,7 +125,7 @@ header {
   width: 100%;
   padding-top: 50px;
   z-index: 10;
-  top:0
+  top: 0;
 }
 a {
   position: relative;
@@ -382,16 +382,17 @@ $componentsGap: 200px;
     height: 100vh;
     position: relative;
     .banner-watermark {
+      transition: all 0.04s;
       position: absolute;
       top: 50%;
       right: 0;
-      font-size: 150px;
+      font-size: 30px;
       transform: translateY(-50%);
       opacity: 0.2;
       font-weight: bold;
       span {
         font-family: CenturyGothic;
-        font-size: 160px;
+        // font-size: 160px;
         font-weight: bold;
         font-stretch: normal;
         font-style: normal;

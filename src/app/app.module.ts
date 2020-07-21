@@ -28,6 +28,7 @@ import { CareerDetailsComponent } from './pages/career-details/career-details.co
 import { IndustriesComponent } from './pages/industries/industries.component';
 import { ServicesComponent } from './pages/services/services.component';
 import { ProductsComponent } from './pages/products/products.component';
+import { PageNotFountComponent } from './pages/page-not-fount/page-not-fount.component';
 
 @NgModule({
   declarations: [
@@ -50,6 +51,7 @@ import { ProductsComponent } from './pages/products/products.component';
     IndustriesComponent,
     ServicesComponent,
     ProductsComponent,
+    PageNotFountComponent,
   ],
   imports: [
     BrowserModule,
