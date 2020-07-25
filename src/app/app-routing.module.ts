@@ -10,6 +10,7 @@ import { ServicesComponent } from './pages/services/services.component';
 import { AchievementsComponent } from './pages/achievements/achievements.component';
 import { PageNotFountComponent } from './pages/page-not-fount/page-not-fount.component';
 import { KnowledgeHubComponent } from './pages/knowledge-hub/knowledge-hub.component';
+import { IndustriesComponent } from './pages/industries/industries.component';
 
 const routes: Routes = [
   { path: 'home', component: HomeComponent },
@@ -20,9 +21,10 @@ const routes: Routes = [
   { path: 'products', component: ProductsComponent },
   { path: 'services', component: ServicesComponent },
   { path: 'achievments', component: AchievementsComponent },
+  { path: 'knowledge-hub', component: KnowledgeHubComponent },
+  { path: 'industries', component: IndustriesComponent },
   { path: '', redirectTo: '/home', pathMatch: 'full' },
   { path: '**', component: PageNotFountComponent },
-  { path: 'knowledge-hub', component: KnowledgeHubComponent },
 ];
 
 @NgModule({
