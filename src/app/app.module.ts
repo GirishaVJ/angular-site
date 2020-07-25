@@ -14,6 +14,7 @@ import { PennedByOurMindsComponent } from './components/penned-by-our-minds/penn
 import { FooterComponent } from './components/footer/footer.component';
 import { HeaderComponent } from './components/header/header.component';
 import { TabsModule } from 'ngx-bootstrap/tabs';
+import { ModalModule } from 'ngx-bootstrap/modal';
 
 import { BannerAnimationComponent } from './components/banner-animation/banner-animation.component';
 import { NewsEventsComponent } from './components/news-events/news-events.component';
@@ -62,6 +63,7 @@ import { KnowledgeHubComponent } from './pages/knowledge-hub/knowledge-hub.compo
     BrowserAnimationsModule,
     CarouselModule,
     TabsModule.forRoot(),
+    ModalModule.forRoot(),
   ],
   providers: [CursorService],
   bootstrap: [AppComponent],

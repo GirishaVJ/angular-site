@@ -492,3 +492,55 @@ $componentsGap: 200px;
     bottom: 3%;
   }
 }
+
+.page-products {
+  .nav-tabs {
+    justify-content: center;
+    margin-bottom: 50px;
+    border: none;
+    .nav-item {
+      margin: 0;
+      border: 2px solid #2489ff;
+      width: 150px;
+      text-align: center;
+      .nav-link {
+        font-weight: bold;
+        border: none;
+      }
+      &.active {
+        .nav-link {
+          background: #2489ff;
+
+          border: none;
+          border-radius: 0;
+          span {
+            color: #fff;
+          }
+        }
+      }
+    }
+  }
+}
+
+.modal-dialog {
+  width: 80%;
+  max-width: 650px;
+}
+.modal-content {
+  border-radius: 0;
+  .modal-body {
+    padding: 0;
+    iframe {
+      display: block;
+    }
+  }
+  .close {
+    position: absolute;
+    right: 0;
+    top: 0;
+    background: #000;
+    width: 30px;
+    line-height: 30px;
+    opacity: 1;
+  }
+}

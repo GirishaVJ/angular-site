@@ -1,89 +1,149 @@
 <section class="internal-page-container">
-    <div class="inner-page-banner">
-      <div class="banner-watermark">Prod<span>ucts</span></div>
-      <div class="container">
-        <div class="row">
-          <div class="col-md-6">
-            <h1>Products</h1>
-            <p>We as Ganitans believe that true business impact can be 
-                realized by achieving an incremental value for each decision made.
-            </p>
-          </div>
+  <div class="inner-page-banner">
+    <div class="banner-watermark">Prod<span>ucts</span></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <h1>Products</h1>
+          <p>
+            We as Ganitans believe that true business impact can be realized by
+            achieving an incremental value for each decision made.
+          </p>
         </div>
       </div>
     </div>
-    <div class="container page-products components-gap">
-        <div class="product-tabs">
-            <span class="active">Product</span>
-            <span>Product lets</span>
+  </div>
+  <div class="container page-products components-gap">
+    <tabset>
+      <tab heading="Product" id="tab1">
+        <div>
+          <div class="product-snppets">
+            <div class="thumb">Augury</div>
+            <div class="text">
+              <h2>Forecasting</h2>
+              <ul>
+                <li>
+                  Takes the guess work out of the forecasting process and
+                  enables collaboration
+                </li>
+                <li>Ensemble model approach built in the tool</li>
+                <li>Intuitive UI to view and analyze historical trends</li>
+                <li>
+                  Handles short time-series<br />
+                  <span>6 months to less than 24 months data</span>
+                </li>
+                <li>
+                  Provides a buffer factor to adjust targets at various levels
+                  in sales hierarchy
+                </li>
+              </ul>
+              <a
+                class="download ml-4"
+                href="javascript:void(0)"
+                (click)="openPopup(template)"
+                ><i class="fas fa-caret-right"></i> Demo</a
+              >
+              <a class="download ml-4" href="#">Know More</a>
+            </div>
+          </div>
+          <div class="product-snppets">
+            <div class="thumb">Ben Line</div>
+            <div class="text">
+              <h2>Route Optimization</h2>
+              <ul>
+                <li>Plan number of trucks needed on a daily basis</li>
+                <li>
+                  Has flexibility to incorporate company specific constraints on
+                  order priority, truck volume and weight, route
+                  characteristics, delivery bounds
+                </li>
+                <li>
+                  Minimizes total cost, distance travelled and number of trucks
+                  needed Easy to print dispatch and delivery reports
+                </li>
+                <li>Dashboards to analyze previous routes and deliveries</li>
+              </ul>
+              <a class="download ml-4" href="#"
+                ><i class="fas fa-caret-right"></i> Demo</a
+              >
+              <a class="download ml-4" href="#">Know More</a>
+            </div>
+          </div>
+          <div class="product-snppets">
+            <div class="thumb">Lift</div>
+            <div class="text">
+              <h2>Promo Effectivness</h2>
+              <ul>
+                <li>
+                  Analyze past promos scientifically with all effects<br />
+                  - Incremental due to promo - Halo effect - Cannibalization -
+                  Pull-forward
+                </li>
+                <li>
+                  Measure effectiveness by channel, promo type, geography,
+                  customer segments
+                </li>
+                <li>
+                  Simulate future promos and design marketing calendar at least
+                  two seasons earlier
+                </li>
+              </ul>
+              <a class="download ml-4" href="#"
+                ><i class="fas fa-caret-right"></i> Demo</a
+              >
+              <a class="download ml-4" href="#">Know More</a>
+            </div>
+          </div>
+          <div class="product-snppets">
+            <div class="thumb">Slant</div>
+            <div class="text">
+              <h2>Sentiment Analysis</h2>
+              <ul>
+                <li>
+                  Web crawling and data scrapping tool to meaningfully
+                  understand consumer sentiment on various social media sites
+                  and web forums
+                </li>
+                <li>Ability to combine web and non-web data sources</li>
+                <li>
+                  Use sentiment as input for targeted marketing activities
+                </li>
+                <li>Simple and easy-to-use front end</li>
+              </ul>
+              <a class="download ml-4" href="#"
+                ><i class="fas fa-caret-right"></i> Demo</a
+              >
+              <a class="download ml-4" href="#">Know More</a>
+            </div>
+          </div>
         </div>
-        <div class="row">
-            <div class="col-md-8">
-                <div class="product-snppets">
-                        <div class="highlights">Augury</div>
-                        <h2>Forecasting</h2>
-                        <ul>
-                            <li>Takes the guess work out of the forecasting process and 
-                                enables collaboration</li>
-                            <li>Ensemble model approach built in the tool</li>
-                            <li>Intuitive UI to view and analyze historical trends</li>
-                            <li>Handles short time-series<br>
-                            <span>6 months to less than 24 months data</span></li>
-                            <li>Provides a buffer factor to adjust targets at various 
-                                levels in sales hierarchy</li>
-                        </ul>
-                        <a class="download" href="#">Demo</a>
-                </div>
-            </div>
-            <div class="col-md-8">
-                <div class="product-snppets">
-                    <div class="highlights">Ben Line</div>
-                    <h2>Route Optimization</h2>
-                    <ul>
-                        <li>Plan number of trucks needed on a daily basis</li>
-                        <li>Has flexibility to incorporate company specific 
-                            constraints on order priority, truck volume and weight, 
-                            route characteristics, delivery bounds</li>
-                        <li>Minimizes total cost, distance travelled and 
-                            number of trucks needed Easy to print dispatch and delivery reports</li>
-                        <li>Dashboards to analyze previous routes and deliveries</li>
-                    </ul>
-                    <a class="download" href="#">Demo</a>
-                </div>
-            </div>
-            <div class="col-md-8">
-                <div class="product-snppets">
-                    <div class="highlights">Lift</div>
-                    <h2>Promo Effectivness</h2>
-                    <ul>
-                        <li>Analyze past promos scientifically with all effects<br>
-                            - Incremental due to promo
-                            - Halo effect
-                            - Cannibalization
-                            - Pull-forward</li>
-                        <li>Measure effectiveness by channel, promo type, geography, 
-                            customer segments</li>
-                        <li>Simulate future promos and design marketing calendar 
-                            at least two seasons earlier</li>
-                    </ul>
-                    <a class="download" href="#">Demo</a>
-                </div>
-            </div>
-            <div class="col-md-8">
-                <div class="product-snppets">
-                    <div class="highlights">Slant</div>
-                    <h2>Sentiment Analysis</h2>
-                    <ul>
-                        <li>Web crawling and data scrapping tool to meaningfully 
-                            understand consumer sentiment on various social media sites and web forums</li>
-                        <li>Ability to combine web and non-web data sources</li>
-                        <li>Use sentiment as input for targeted marketing activities</li>
-                        <li>Simple and easy-to-use front end</li>
-                    </ul>
-                    <a class="download" href="#">Demo</a>
-                </div>
-            </div>
-        </div>
-    </div>
+      </tab>
+      <tab heading="Product lets">
+        <h3>Product lets Content will come here</h3></tab
+      >
+    </tabset>
+  </div>
 </section>
-  
+
+<ng-template #template>
+  <div class="modal-body video-modal">
+    <button
+      type="button"
+      class="close pull-right"
+      aria-label="Close"
+      (click)="modalRef.hide()"
+    >
+      <span aria-hidden="true">&times;</span>
+    </button>
+    <div class="player">
+      <iframe
+        width="100%"
+        height="350"
+        src="https://www.youtube.com/embed/nu5mdN2JIwM"
+        frameborder="0"
+        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      ></iframe>
+    </div>
+  </div>
+</ng-template>
