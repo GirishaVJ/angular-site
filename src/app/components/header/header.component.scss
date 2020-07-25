@@ -139,6 +139,9 @@
   }
   &.menu-open {
     height: 100vh;
+    @media (max-width: 767.98px) {
+      overflow: scroll;
+    }
     .menu-container {
       animation: menuFade 1s ease-in;
     }
@@ -146,10 +149,12 @@
     .menu-type1,
     .menu-type2 {
       height: 99vh;
+      @media (max-width: 767.98px) {
+        height: auto;
+      }
     }
   }
 }
-
 .menu-type1 {
   padding: 120px 0 20px;
   position: relative;

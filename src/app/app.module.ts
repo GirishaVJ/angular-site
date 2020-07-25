@@ -29,6 +29,7 @@ import { IndustriesComponent } from './pages/industries/industries.component';
 import { ServicesComponent } from './pages/services/services.component';
 import { ProductsComponent } from './pages/products/products.component';
 import { PageNotFountComponent } from './pages/page-not-fount/page-not-fount.component';
+import { KnowledgeHubComponent } from './pages/knowledge-hub/knowledge-hub.component';
 
 @NgModule({
   declarations: [
@@ -52,6 +53,7 @@ import { PageNotFountComponent } from './pages/page-not-fount/page-not-fount.com
     ServicesComponent,
     ProductsComponent,
     PageNotFountComponent,
+    KnowledgeHubComponent,
   ],
   imports: [
     BrowserModule,
