@@ -522,9 +522,14 @@ $componentsGap: 200px;
   }
 }
 
+.modal-open .modal {
+  display: flex !important;
+}
+
 .modal-dialog {
   width: 80%;
   max-width: 650px;
+  margin: auto;
 }
 .modal-content {
   border-radius: 0;
