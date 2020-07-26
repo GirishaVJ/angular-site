@@ -1,0 +1,27 @@
+.page-product-details {
+    .un-order-listing {
+        margin-bottom: 80px;
+        li {
+            margin-bottom: 30px;
+            font-weight: 700;
+            padding-left: 50px;
+            position: relative;
+            span {
+                font-size: 12px;
+                color: #2489ff;
+            }
+            &::before{
+                content: " ";
+                position: absolute;
+                left: 0;
+                background: #111111;
+                width: 20px;
+                height: 2px;
+                top: 15px;
+            }
+        }
+    }
+    .download {
+        margin-left: 50px;
+    }
+}

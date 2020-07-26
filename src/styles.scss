@@ -544,3 +544,10 @@ $componentsGap: 200px;
     opacity: 1;
   }
 }
+.main-component-container {
+  position: relative;
+  z-index: 2;
+  @media (max-width: 767.98px) {
+    margin-bottom: 0 !Important;
+  }
+}

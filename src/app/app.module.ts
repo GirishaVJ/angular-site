@@ -31,6 +31,10 @@ import { ServicesComponent } from './pages/services/services.component';
 import { ProductsComponent } from './pages/products/products.component';
 import { PageNotFountComponent } from './pages/page-not-fount/page-not-fount.component';
 import { KnowledgeHubComponent } from './pages/knowledge-hub/knowledge-hub.component';
+import { ContatUsComponent } from './pages/contat-us/contat-us.component';
+import { ProductDetailsComponent } from './pages/product-details/product-details.component';
+import { AboutUsComponent } from './pages/about-us/about-us.component';
+import { ServicesDetailsComponent } from './pages/services-details/services-details.component';
 
 @NgModule({
   declarations: [
@@ -55,6 +59,10 @@ import { KnowledgeHubComponent } from './pages/knowledge-hub/knowledge-hub.compo
     ProductsComponent,
     PageNotFountComponent,
     KnowledgeHubComponent,
+    ContatUsComponent,
+    ProductDetailsComponent,
+    AboutUsComponent,
+    ServicesDetailsComponent,
   ],
   imports: [
     BrowserModule,
