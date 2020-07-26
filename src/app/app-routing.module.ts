@@ -11,6 +11,10 @@ import { AchievementsComponent } from './pages/achievements/achievements.compone
 import { PageNotFountComponent } from './pages/page-not-fount/page-not-fount.component';
 import { KnowledgeHubComponent } from './pages/knowledge-hub/knowledge-hub.component';
 import { IndustriesComponent } from './pages/industries/industries.component';
+import { AboutUsComponent } from './pages/about-us/about-us.component';
+import { ContatUsComponent } from './pages/contat-us/contat-us.component';
+import { ServicesDetailsComponent } from './pages/services-details/services-details.component';
+import { ProductDetailsComponent } from './pages/product-details/product-details.component';
 
 const routes: Routes = [
   { path: 'home', component: HomeComponent },
@@ -23,6 +27,10 @@ const routes: Routes = [
   { path: 'achievments', component: AchievementsComponent },
   { path: 'knowledge-hub', component: KnowledgeHubComponent },
   { path: 'industries', component: IndustriesComponent },
+  { path: 'product-details', component: ProductDetailsComponent },
+  { path: 'about-us', component: AboutUsComponent },
+  { path: 'contact-us', component: ContatUsComponent },
+  { path: 'services-details', component: ServicesDetailsComponent },
   { path: '', redirectTo: '/home', pathMatch: 'full' },
   { path: '**', component: PageNotFountComponent },
 ];

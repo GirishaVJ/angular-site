@@ -6,6 +6,9 @@
   bottom: 60px;
   z-index: 1;
   opacity: 0;
+  @media (max-width: 767.98px) {
+    position: static;
+  }
   .container-fluid {
     z-index: 1;
     position: relative;
@@ -43,17 +46,22 @@
         font-size: 16px;
       }
     }
-    .address {
-      padding: 20px 0 0 20px;
-      font-weight: 600;
-      h3 {
-        color: #ffffff;
-        font-size: 20px; 
-        position: relative;
+    .address-snippet {
+      @media (max-width: 767.98px) {
+        background-color: #2489ff;
       }
-      p {
-        color: #ffffff;
-        font-size: 16px;
+      .address {
+        padding: 20px 0 0 20px;
+        font-weight: 600;
+        h3 {
+          color: #ffffff;
+          font-size: 20px; 
+          position: relative;
+        }
+        p {
+          color: #ffffff;
+          font-size: 16px;
+        }
       }
     }
   }
