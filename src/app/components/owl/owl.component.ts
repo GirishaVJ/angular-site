@@ -19,8 +19,8 @@ export class OwlComponent implements OnInit {
     margin: 30,
     nav: true,
     navText: [
-      "<i class='icon icon-arrow-left'></i>",
-      "<i class='icon icon-arrow-right'></i>",
+      "<i class='icon ga-arrow_back'></i>",
+      "<i class='icon ga-arrow_forward'></i>",
     ],
     responsive: {
       0: {
