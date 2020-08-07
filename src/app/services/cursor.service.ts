@@ -56,6 +56,6 @@ export class CursorService {
     this.titleScrollPosition.left =
       event.srcElement.scrollingElement.scrollLeft;
     this.titleScrollPosition.top = event.srcElement.scrollingElement.scrollTop;
-    console.log(this.titleScrollPosition);
+    // console.log(this.titleScrollPosition);
   }
 }

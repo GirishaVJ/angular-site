@@ -25,6 +25,22 @@
     .text {
       padding: 80px 15px;
       box-shadow: 0 0 10px 0px #ddd;
+      .download {
+        width: auto;
+        padding: 5px 15px;
+        height: auto;
+        i {
+          opacity: 1;
+          position: relative;
+          top: 0;
+          margin: 0;
+          line-height: 26px;
+        }
+        &:hover {
+          background: darken(#2489ff, 15%);
+          box-shadow: 3px 3px 3px #aaa;
+        }
+      }
     }
     h2 {
       color: #006090;

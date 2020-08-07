@@ -20,63 +20,63 @@ body {
   font-weight: normal;
   font-style: normal;
 }
-@font-face {
-  font-family: 'ganit';
-  src: url('./assets/fonts/ganit.ttf?ykftgu') format('truetype'),
-    url('./assets/fonts/ganit.woff?ykftgu') format('woff'),
-    url('./assets/fonts/ganit.svg?ykftgu#ganit') format('svg');
-  font-weight: normal;
-  font-style: normal;
-  font-display: block;
-}
-.icon {
-  /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: 'ganit' !important;
-  speak: never;
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
+// @font-face {
+//   font-family: 'ganit';
+//   src: url('./assets/fonts/ganit.ttf?ykftgu') format('truetype'),
+//     url('./assets/fonts/ganit.woff?ykftgu') format('woff'),
+//     url('./assets/fonts/ganit.svg?ykftgu#ganit') format('svg');
+//   font-weight: normal;
+//   font-style: normal;
+//   font-display: block;
+// }
+// .icon {
+//   /* use !important to prevent issues with browser extensions that change fonts */
+//   font-family: 'ganit' !important;
+//   speak: never;
+//   font-style: normal;
+//   font-weight: normal;
+//   font-variant: normal;
+//   text-transform: none;
+//   line-height: 1;
 
-  /* Better Font Rendering =========== */
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-$icon-achievements-one-path1: '\e900';
-$icon-achievements-one-path2: '\e901';
-$icon-achievements-one-path3: '\e902';
-$icon-achievements-one-path4: '\e903';
-$icon-achievements-one-path5: '\e904';
-$icon-achievements-one-path6: '\e905';
-$icon-achievements-one-path7: '\e906';
-$icon-achievements-one-path8: '\e907';
-$icon-achievements-one-path9: '\e908';
-$icon-achievements-three: '\e909';
-$icon-achievements-two-path1: '\e90a';
-$icon-achievements-two-path2: '\e90b';
-$icon-achievements-two-path3: '\e90c';
-$icon-achievements-two-path4: '\e90d';
-$icon-achievements-two-path5: '\e90e';
-$icon-achievements-two-path6: '\e90f';
-$icon-achievements-two-path7: '\e910';
-$icon-arrow-left: '\e911';
-$icon-arrow-right: '\e912';
-$icon-automotive: '\e913';
-$icon-cpg: '\e914';
-$icon-energy: '\e915';
-$icon-Gfinancial-services: '\e916';
-$icon-logistics: '\e917';
-$icon-manufacturing: '\e918';
-$icon-media: '\e919';
-$icon-pharma-path1: '\e91a';
-$icon-pharma-path2: '\e91b';
-$icon-pharma-path3: '\e91c';
-$icon-pharma-path4: '\e91d';
-$icon-public-sector: '\e91e';
-$icon-restaurants-hospitality: '\e91f';
-$icon-retails: '\e920';
-@import 'icons';
+//   /* Better Font Rendering =========== */
+//   -webkit-font-smoothing: antialiased;
+//   -moz-osx-font-smoothing: grayscale;
+// }
+// $icon-achievements-one-path1: '\e900';
+// $icon-achievements-one-path2: '\e901';
+// $icon-achievements-one-path3: '\e902';
+// $icon-achievements-one-path4: '\e903';
+// $icon-achievements-one-path5: '\e904';
+// $icon-achievements-one-path6: '\e905';
+// $icon-achievements-one-path7: '\e906';
+// $icon-achievements-one-path8: '\e907';
+// $icon-achievements-one-path9: '\e908';
+// $icon-achievements-three: '\e909';
+// $icon-achievements-two-path1: '\e90a';
+// $icon-achievements-two-path2: '\e90b';
+// $icon-achievements-two-path3: '\e90c';
+// $icon-achievements-two-path4: '\e90d';
+// $icon-achievements-two-path5: '\e90e';
+// $icon-achievements-two-path6: '\e90f';
+// $icon-achievements-two-path7: '\e910';
+// $icon-arrow-left: '\e911';
+// $icon-arrow-right: '\e912';
+// $icon-automotive: '\e913';
+// $icon-cpg: '\e914';
+// $icon-energy: '\e915';
+// $icon-Gfinancial-services: '\e916';
+// $icon-logistics: '\e917';
+// $icon-manufacturing: '\e918';
+// $icon-media: '\e919';
+// $icon-pharma-path1: '\e91a';
+// $icon-pharma-path2: '\e91b';
+// $icon-pharma-path3: '\e91c';
+// $icon-pharma-path4: '\e91d';
+// $icon-public-sector: '\e91e';
+// $icon-restaurants-hospitality: '\e91f';
+// $icon-retails: '\e920';
+// @import 'icons';
 * {
   margin: 0;
   padding: 0;
@@ -359,26 +359,25 @@ $componentsGap: 200px;
   overflow: hidden;
   display: inline-block;
   i {
-    visibility: hidden;
-    transition: 0.5s;
+    opacity: 0;
+    transition: all 0.5s;
     line-height: 27px;
     margin-left: -5px;
     position: absolute;
+    top: 20%;
+    color: #ffffff;
   }
   &:hover {
     width: 170px;
     color: #ffffff;
-    i.icon-arrow-right {
+    i.icon {
       opacity: 1;
       margin-left: 10px;
-      position: absolute;
-      top: 20%;
-      visibility: visible;
-      width: 20px;
-      height: 20px;
-      &:before {
-        color: #ffffff;
-      }
+      // width: 20px;
+      // height: 20px;
+      // &:before {
+      //   color: #ffffff;
+      // }
     }
   }
 }
@@ -559,6 +558,6 @@ $componentsGap: 200px;
   position: relative;
   z-index: 2;
   @media (max-width: 767.98px) {
-    margin-bottom: 0 !Important;
+    margin-bottom: 0 !important;
   }
 }
