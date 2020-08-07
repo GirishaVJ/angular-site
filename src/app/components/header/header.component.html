@@ -1,9 +1,11 @@
 <header>
   <div class="container menu-header">
-    <div class="ganit-logo" id="logo" (click)="redirect('home')">Ganit</div>
-
+    <div class="ganit-logo" id="logo" (click)="redirect('home')">
+      <span>Ganit</span>
+    </div>
     <div class="hambergarmenu">
-      <input (click)="hambergarEvent($event)"
+      <input
+        (click)="hambergarEvent($event)"
         class="checkbox-toggle"
         id="hamburger"
         type="checkbox"
@@ -90,7 +92,12 @@
     <div class="menu-rect"></div>
   </div>
 </header>
-<div *ngIf="!scrollhide" class="scroll-down-arrow" id="scroll-arrow" (click)="onPageScrollClick()">
+<div
+  [ngClass]="{'d-none': scrollhide}"
+  class="scroll-down-arrow"
+  id="scroll-arrow"
+  (click)="onPageScrollClick()"
+>
   <img src="assets/icons/down-arrow.svg" />
   <span>Scroll Down</span>
 </div>

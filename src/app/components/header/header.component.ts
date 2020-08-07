@@ -40,7 +40,7 @@ export class HeaderComponent implements OnInit {
 
       //down arrow
 
-      if (window.pageYOffset > 100 && !this.scrollhide) {
+      if (window.pageYOffset > 100) {
         document.getElementById('scroll-arrow').style.opacity = '0';
       } else if(!this.scrollhide) {
         document.getElementById('scroll-arrow').style.opacity = '1';
@@ -50,6 +50,7 @@ export class HeaderComponent implements OnInit {
 
   redirect(page) {
     this.router.navigate([page]);
+    this.renderer.removeClass(document.body,'scrollhide');
     this.toggleMenu = false;
   }
 
