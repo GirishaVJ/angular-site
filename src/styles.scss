@@ -1,3 +1,6 @@
+html {
+  scroll-behavior: smooth;
+}
 body {
   background-color: #fff;
   font-family: 'CenturyGothic';
@@ -111,6 +114,9 @@ p {
 }
 .clear-both {
   clear: both;
+}
+.scrollhide {
+  overflow: hidden;
 }
 .ganit-container {
   max-width: 1366px;

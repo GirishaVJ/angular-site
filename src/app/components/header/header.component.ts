@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit,Renderer2 } from '@angular/core';
 import { Router } from '@angular/router';
 
 @Component({
@@ -9,17 +9,24 @@ import { Router } from '@angular/router';
 export class HeaderComponent implements OnInit {
   toggleMenu = null;
   windowHeight = null;
-  constructor(private router: Router) {
+  scrollhide = false;
+  constructor(private router: Router,public renderer:Renderer2) {
     window.onload = () => {};
-
     this.pageScroll();
   }
 
   ngOnInit() {
     this.windowHeight = window.innerHeight;
-    console.log(this.windowHeight);
+    this.scrollhide = window.location.pathname=="/chat" ? true : false;
+    console.log(window.location.pathname);
   }
-
+  hambergarEvent(event){
+    if(this.toggleMenu){
+      this.renderer.removeClass(document.body,'scrollhide');
+    }else{
+      this.renderer.addClass(document.body,'scrollhide');
+    }
+  }
   pageScroll() {
     let prevScrollpos = window.pageYOffset;
     window.onscroll = function () {
@@ -33,9 +40,9 @@ export class HeaderComponent implements OnInit {
 
       //down arrow
 
-      if (window.pageYOffset > 100) {
+      if (window.pageYOffset > 100 && !this.scrollhide) {
         document.getElementById('scroll-arrow').style.opacity = '0';
-      } else {
+      } else if(!this.scrollhide) {
         document.getElementById('scroll-arrow').style.opacity = '1';
       }
     };

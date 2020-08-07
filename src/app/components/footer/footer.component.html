@@ -10,15 +10,15 @@
             <div class="col-md-3">
               <ul>
                 <li>
-                  <h3><a href="#">Industries</a></h3>
+                  <h3><a [routerLink]="[ '/industries']">Industries</a></h3>
                 </li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Platforms</a></li>
+                <li><a [routerLink]="[ '/services']">Services</a></li>
+                <li><a [routerLink]="[ '/products']">Platforms</a></li>
               </ul>
             </div>
             <div class="col-md-3">
               <ul>
-                <li><a href="#">Retails</a></li>
+                <li><a [routerLink]="[ '/career-details']">Retails</a></li>
                 <li><a href="#">CPG</a></li>
                 <li><a href="#">Pharma</a></li>
                 <li><a href="#">Financial Services</a></li>
@@ -44,9 +44,9 @@
           <div class="row">
             <div class="col-md-12">
               <div class="footer-bottom-links">
-                <a href="#">Careers</a>
+                <a [routerLink]="[ '/careers']">Careers</a>
                 <a href="#">Geekbar</a>
-                <a href="#">Contact</a>
+                <a [routerLink]="[ '/contact-us']">Contact</a>
               </div>
             </div>
           </div>

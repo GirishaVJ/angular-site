@@ -35,6 +35,7 @@ import { ContatUsComponent } from './pages/contat-us/contat-us.component';
 import { ProductDetailsComponent } from './pages/product-details/product-details.component';
 import { AboutUsComponent } from './pages/about-us/about-us.component';
 import { ServicesDetailsComponent } from './pages/services-details/services-details.component';
+import { ChatComponent } from './pages/chat/chat.component';
 
 @NgModule({
   declarations: [
@@ -63,6 +64,7 @@ import { ServicesDetailsComponent } from './pages/services-details/services-deta
     ProductDetailsComponent,
     AboutUsComponent,
     ServicesDetailsComponent,
+    ChatComponent,
   ],
   imports: [
     BrowserModule,

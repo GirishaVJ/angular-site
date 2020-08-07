@@ -3,7 +3,7 @@
     <div class="ganit-logo" id="logo" (click)="redirect('home')">Ganit</div>
 
     <div class="hambergarmenu">
-      <input
+      <input (click)="hambergarEvent($event)"
         class="checkbox-toggle"
         id="hamburger"
         type="checkbox"
@@ -22,7 +22,7 @@
           <li><a (click)="redirect('products')">Platforms</a></li>
           <li><a (click)="redirect('careers')">Careers</a></li>
           <li><a>Geekbar</a></li>
-          <li><a routerLink="careers">Contact</a></li>
+          <li><a (click)="redirect('contact-us')">Contact</a></li>
         </ul>
         <app-banner-animation></app-banner-animation>
       </div>
@@ -83,7 +83,7 @@
     <div class="menu-rect"></div>
   </div>
 </header>
-<div class="scroll-down-arrow" id="scroll-arrow" (click)="onPageScrollClick()">
+<div *ngIf="!scrollhide" class="scroll-down-arrow" id="scroll-arrow" (click)="onPageScrollClick()">
   <img src="assets/icons/down-arrow.svg" />
   <span>Scroll Down</span>
 </div>

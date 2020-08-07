@@ -15,22 +15,24 @@ import { AboutUsComponent } from './pages/about-us/about-us.component';
 import { ContatUsComponent } from './pages/contat-us/contat-us.component';
 import { ServicesDetailsComponent } from './pages/services-details/services-details.component';
 import { ProductDetailsComponent } from './pages/product-details/product-details.component';
+import { ChatComponent } from './pages/chat/chat.component';
 
 const routes: Routes = [
   { path: 'home', component: HomeComponent },
   { path: 'news-and-events', component: NewsAndEventsComponent },
-  { path: 'news-details', component: NewsDetailsComponent },
+  { path: 'news-details/:id', component: NewsDetailsComponent },
   { path: 'careers', component: CareersComponent },
   { path: 'career-details', component: CareerDetailsComponent },
   { path: 'products', component: ProductsComponent },
   { path: 'services', component: ServicesComponent },
-  { path: 'achievments', component: AchievementsComponent },
+  { path: 'achievements', component: AchievementsComponent },
   { path: 'knowledge-hub', component: KnowledgeHubComponent },
   { path: 'industries', component: IndustriesComponent },
   { path: 'product-details', component: ProductDetailsComponent },
   { path: 'about-us', component: AboutUsComponent },
   { path: 'contact-us', component: ContatUsComponent },
   { path: 'services-details', component: ServicesDetailsComponent },
+  { path: 'chat', component: ChatComponent },
   { path: '', redirectTo: '/home', pathMatch: 'full' },
   { path: '**', component: PageNotFountComponent },
 ];
