@@ -30,6 +30,7 @@
               "./node_modules/ngx-owl-carousel-o/lib/styles/prebuilt-themes/owl.theme.default.min.css",
               "./node_modules/aos/src/sass/aos.scss",
               "src/assets/css/style.css",
+              "src/common.scss",
               "src/styles.scss"
             ],
             "scripts": ["./node_modules/aos/dist/aos.js"]

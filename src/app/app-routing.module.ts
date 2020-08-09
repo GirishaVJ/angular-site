@@ -16,6 +16,7 @@ import { ContatUsComponent } from './pages/contat-us/contat-us.component';
 import { ServicesDetailsComponent } from './pages/services-details/services-details.component';
 import { ProductDetailsComponent } from './pages/product-details/product-details.component';
 import { ChatComponent } from './pages/chat/chat.component';
+import { AchievmentsDetailsComponent } from './pages/achievments-details/achievments-details.component';
 
 const routes: Routes = [
   { path: 'home', component: HomeComponent },
@@ -33,6 +34,7 @@ const routes: Routes = [
   { path: 'contact-us', component: ContatUsComponent },
   { path: 'services-details', component: ServicesDetailsComponent },
   { path: 'chat', component: ChatComponent },
+  { path: 'achievements/:id', component: AchievmentsDetailsComponent },
   { path: '', redirectTo: '/home', pathMatch: 'full' },
   { path: '**', component: PageNotFountComponent },
 ];

@@ -1,0 +1,61 @@
+.achievments-details {
+    .post-details {
+        color: #111111;
+        font-weight: 700;
+        margin-bottom: 50px;
+        span {
+            color: #969696;
+            padding-left: 15px;
+            position: relative;
+            &:before {  
+                content: "|";
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100px;
+            }
+        }
+
+    }
+    .post-img {
+        position: relative;
+        margin-bottom: 60px;
+        &:before {
+            border-top:20px solid #2489ff;    
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100px;
+        }
+        &:after {
+            border-left:20px solid #2489ff;    
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 10px;
+            height:250px;
+        }
+        img {
+            width: calc(100% - 20px);
+            margin:20px 0 0 20px;
+        }
+    }
+    .post-description {
+        margin: 0 auto;
+        h2 {
+            font-size: 20px;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+        p {
+            margin-bottom: 30px;
+            font-size: 20px;
+            span {
+                color: #2489ff;
+                font-weight: 600;
+            }
+        }
+    }
+}

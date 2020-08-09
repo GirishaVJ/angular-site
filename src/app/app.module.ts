@@ -36,6 +36,7 @@ import { ProductDetailsComponent } from './pages/product-details/product-details
 import { AboutUsComponent } from './pages/about-us/about-us.component';
 import { ServicesDetailsComponent } from './pages/services-details/services-details.component';
 import { ChatComponent } from './pages/chat/chat.component';
+import { AchievmentsDetailsComponent } from './pages/achievments-details/achievments-details.component';
 
 @NgModule({
   declarations: [
@@ -65,6 +66,7 @@ import { ChatComponent } from './pages/chat/chat.component';
     AboutUsComponent,
     ServicesDetailsComponent,
     ChatComponent,
+    AchievmentsDetailsComponent,
   ],
   imports: [
     BrowserModule,
