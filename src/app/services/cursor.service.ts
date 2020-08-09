@@ -1,5 +1,6 @@
 import { Injectable, HostListener } from '@angular/core';
 import { ViewportScroller } from '@angular/common';
+import { Router } from '@angular/router';
 
 @Injectable({
   providedIn: 'root',
@@ -19,8 +20,11 @@ export class CursorService {
 
   isHyperlink = false;
 
-  constructor() {
+  constructor(private router: Router) {
     window.addEventListener('scroll', this.scroll, true);
+    router.events.subscribe((val) => {
+      this.display = 'none';
+    });
   }
 
   scroll = (event): void => {
