@@ -3,20 +3,20 @@ html {
 }
 body {
   background-color: #fff;
-  font-family: 'CenturyGothic';
+  font-family: "CenturyGothic";
   font-size: 18px;
 }
 @font-face {
-  font-family: 'CenturyGothic';
-  src: url('./assets/fonts/CenturyGothic.eot') format('embedded-opentype');
+  font-family: "CenturyGothic";
+  src: url("./assets/fonts/CenturyGothic.eot") format("embedded-opentype");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
-  font-family: 'CenturyGothic';
-  src: url('./assets/fonts/CenturyGothic.woff') format('woff'),
-    url('./assets/fonts/CenturyGothic.ttf') format('truetype'),
-    url('./assets/fonts/CenturyGothic.svg#CenturyGothic') format('svg');
+  font-family: "CenturyGothic";
+  src: url("./assets/fonts/CenturyGothic.woff") format("woff"),
+    url("./assets/fonts/CenturyGothic.ttf") format("truetype"),
+    url("./assets/fonts/CenturyGothic.svg#CenturyGothic") format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -80,7 +80,7 @@ body {
 * {
   margin: 0;
   padding: 0;
-  font-family: 'CenturyGothic';
+  font-family: "CenturyGothic";
   list-style: none;
   font-weight: normal;
   font-stretch: normal;
@@ -191,49 +191,49 @@ a.viewall {
   display: inline-block;
   vertical-align: middle;
   &.retails {
-    background: url('./assets/icons/Group3879.svg') no-repeat center center;
+    background: url("./assets/icons/Group3879.svg") no-repeat center center;
   }
   &.cpg {
-    background: url('./assets/icons/Group3880.svg') no-repeat center center;
+    background: url("./assets/icons/Group3880.svg") no-repeat center center;
   }
   &.Pharma {
-    background: url('./assets/icons/Group3881.svg') no-repeat center center;
+    background: url("./assets/icons/Group3881.svg") no-repeat center center;
   }
   &.financial-services {
-    background: url('./assets/icons/Group3882.svg') no-repeat center center;
+    background: url("./assets/icons/Group3882.svg") no-repeat center center;
   }
   &.media {
-    background: url('./assets/icons/Group3883.svg') no-repeat center center;
+    background: url("./assets/icons/Group3883.svg") no-repeat center center;
   }
   &.automotive {
-    background: url('./assets/icons/Group3884.svg') no-repeat center center;
+    background: url("./assets/icons/Group3884.svg") no-repeat center center;
   }
   &.chemicals {
-    background: url('./assets/icons/Group3885.svg') no-repeat center center;
+    background: url("./assets/icons/Group3885.svg") no-repeat center center;
   }
   &.energy {
-    background: url('./assets/icons/Group3886.svg') no-repeat center center;
+    background: url("./assets/icons/Group3886.svg") no-repeat center center;
   }
   &.public-sector {
-    background: url('./assets/icons/Group3887.svg') no-repeat center center;
+    background: url("./assets/icons/Group3887.svg") no-repeat center center;
   }
   &.restaurants-hospitality {
-    background: url('./assets/icons/Group3888.svg') no-repeat center center;
+    background: url("./assets/icons/Group3888.svg") no-repeat center center;
   }
   &.logistics {
-    background: url('./assets/icons/Group3890.svg') no-repeat center center;
+    background: url("./assets/icons/Group3890.svg") no-repeat center center;
   }
   &.manufacturing {
-    background: url('./assets/icons/Group3879.svg') no-repeat center center;
+    background: url("./assets/icons/Group3879.svg") no-repeat center center;
   }
   &.achievements-one {
-    background: url('./assets/icons/Component6–6.svg') no-repeat center center;
+    background: url("./assets/icons/Component6–6.svg") no-repeat center center;
   }
   &.achievements-two {
-    background: url('./assets/icons/Component7–6.svg') no-repeat center center;
+    background: url("./assets/icons/Component7–6.svg") no-repeat center center;
   }
   &.achievements-three {
-    background: url('./assets/icons/achievements-three.svg') no-repeat center
+    background: url("./assets/icons/achievements-three.svg") no-repeat center
       center;
   }
 }
@@ -250,7 +250,7 @@ a.viewall {
 }
 .owl-carousel .owl-nav {
   display: block !important;
-  [class*='owl-'] {
+  [class*="owl-"] {
     background: none;
     font-size: 30px;
     position: absolute;
@@ -303,7 +303,7 @@ a.viewall {
   pointer-events: none;
   z-index: 100;
   &:before {
-    content: '';
+    content: "";
     position: absolute;
     border-radius: 50%;
     left: -1px;
@@ -465,7 +465,6 @@ $componentsGap: 200px;
   font-size: 0.8rem;
   animation: bounce 1.5s infinite;
   cursor: pointer;
-  z-index: 100;
   span {
     padding-top: 0.6rem;
     display: block;
@@ -563,31 +562,31 @@ $componentsGap: 200px;
     }
   }
   ul.nav-pills {
-      flex: 0 0 33.3333333333%;
-      max-width: 33.3333333333%;
-      .nav-item {
-        a {
-          margin-bottom: 0;
-          padding: 30px;
-          p{
-            margin-bottom: 0;
-          }
-        }
-      }
-      @media (max-width: 576px) {
-        max-width: 100%;
-        display: block;
-        margin-bottom: 30px;
-        li {
-          display: inline-block;
-        }
-        .nav-item a {
-          padding: 15px;
-        }
+    flex: 0 0 33.3333333333%;
+    max-width: 33.3333333333%;
+    .nav-item {
+      a {
+        margin-bottom: 0;
+        padding: 30px;
         p {
-          display: none;
+          margin-bottom: 0;
         }
       }
+    }
+    @media (max-width: 576px) {
+      max-width: 100%;
+      display: block;
+      margin-bottom: 30px;
+      li {
+        display: inline-block;
+      }
+      .nav-item a {
+        padding: 15px;
+      }
+      p {
+        display: none;
+      }
+    }
   }
   .tab-content {
     flex: 0 0 66.6666666667%;
