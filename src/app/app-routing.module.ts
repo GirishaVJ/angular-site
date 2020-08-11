@@ -28,7 +28,7 @@ const routes: Routes = [
   { path: 'services', component: ServicesComponent },
   { path: 'achievements', component: AchievementsComponent },
   { path: 'knowledge-hub', component: KnowledgeHubComponent },
-  { path: 'industries', component: IndustriesComponent },
+  { path: 'industries/:id', component: IndustriesComponent },
   { path: 'product-details', component: ProductDetailsComponent },
   { path: 'about-us', component: AboutUsComponent },
   { path: 'contact-us', component: ContatUsComponent },

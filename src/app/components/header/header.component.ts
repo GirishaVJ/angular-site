@@ -53,7 +53,11 @@ export class HeaderComponent implements OnInit {
     this.renderer.removeClass(document.body,'scrollhide');
     this.toggleMenu = false;
   }
-
+  redirectIndustries(param) {
+    this.router.navigate(['industries',param]);
+    this.renderer.removeClass(document.body,'scrollhide');
+    this.toggleMenu = false;
+  }
   onPageScrollClick() {
     window.scroll({
       top: this.windowHeight - 10,
