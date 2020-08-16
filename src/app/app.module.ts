@@ -9,14 +9,12 @@ import { CursorService } from './services/cursor.service';
 import { HomeComponent } from './pages/home/home.component';
 import { BannerComponent } from './components/banner/banner.component';
 import { HightlightsComponent } from './components/hightlights/hightlights.component';
-import { PennedByOurMindsComponent } from './components/penned-by-our-minds/penned-by-our-minds.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { HeaderComponent } from './components/header/header.component';
 import { TabsModule } from 'ngx-bootstrap/tabs';
 import { ModalModule } from 'ngx-bootstrap/modal';
 
 import { BannerAnimationComponent } from './components/banner-animation/banner-animation.component';
-import { NewsEventsComponent } from './components/news-events/news-events.component';
 import { OwlComponent } from './components/owl/owl.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { CarouselModule } from 'ngx-owl-carousel-o';
@@ -27,16 +25,18 @@ import { CareersComponent } from './pages/careers/careers.component';
 import { CareerDetailsComponent } from './pages/career-details/career-details.component';
 import { IndustriesComponent } from './pages/industries/industries.component';
 import { ServicesComponent } from './pages/services/services.component';
-import { ProductsComponent } from './pages/products/products.component';
 import { PageNotFountComponent } from './pages/page-not-fount/page-not-fount.component';
 import { KnowledgeHubComponent } from './pages/knowledge-hub/knowledge-hub.component';
 import { ContatUsComponent } from './pages/contat-us/contat-us.component';
-import { ProductDetailsComponent } from './pages/product-details/product-details.component';
 import { AboutUsComponent } from './pages/about-us/about-us.component';
 import { ServicesDetailsComponent } from './pages/services-details/services-details.component';
 import { ChatComponent } from './pages/chat/chat.component';
 import { AchievmentsDetailsComponent } from './pages/achievments-details/achievments-details.component';
 import { ClientsPreferUsComponent } from './components/clients-prefer-us/clients-prefer-us.component';
+import { SpotlightsComponent } from './components/spotlights/spotlights.component';
+import { HomeKnowledgeHubComponent } from './components/home-knowledge-hub/home-knowledge-hub.component';
+import { PlatformsComponent } from './pages/platforms/platforms.component';
+import { PlatformDetailsComponent } from './pages/platform-details/platform-details.component';
 
 @NgModule({
   declarations: [
@@ -45,11 +45,11 @@ import { ClientsPreferUsComponent } from './components/clients-prefer-us/clients
     BannerComponent,
     HightlightsComponent,
     ClientsPreferUsComponent,
-    PennedByOurMindsComponent,
+    HomeKnowledgeHubComponent,
     FooterComponent,
     HeaderComponent,
     BannerAnimationComponent,
-    NewsEventsComponent,
+    SpotlightsComponent,
     OwlComponent,
     ParallaxDirective,
     NewsAndEventsComponent,
@@ -58,11 +58,11 @@ import { ClientsPreferUsComponent } from './components/clients-prefer-us/clients
     CareerDetailsComponent,
     IndustriesComponent,
     ServicesComponent,
-    ProductsComponent,
+    PlatformsComponent,
     PageNotFountComponent,
     KnowledgeHubComponent,
     ContatUsComponent,
-    ProductDetailsComponent,
+    PlatformDetailsComponent,
     AboutUsComponent,
     ServicesDetailsComponent,
     ChatComponent,

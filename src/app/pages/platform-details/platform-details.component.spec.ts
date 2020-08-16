@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { AchievementsComponent } from './achievements.component';
+import { PlatformDetailsComponent } from './platform-details.component';
 
-describe('AchievementsComponent', () => {
-  let component: AchievementsComponent;
-  let fixture: ComponentFixture<AchievementsComponent>;
+describe('PlatformDetailsComponent', () => {
+  let component: PlatformDetailsComponent;
+  let fixture: ComponentFixture<PlatformDetailsComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ AchievementsComponent ]
+      declarations: [ PlatformDetailsComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(AchievementsComponent);
+    fixture = TestBed.createComponent(PlatformDetailsComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
