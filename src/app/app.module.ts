@@ -9,7 +9,6 @@ import { CursorService } from './services/cursor.service';
 import { HomeComponent } from './pages/home/home.component';
 import { BannerComponent } from './components/banner/banner.component';
 import { HightlightsComponent } from './components/hightlights/hightlights.component';
-import { AchievementsComponent } from './components/achievements/achievements.component';
 import { PennedByOurMindsComponent } from './components/penned-by-our-minds/penned-by-our-minds.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { HeaderComponent } from './components/header/header.component';
@@ -37,6 +36,7 @@ import { AboutUsComponent } from './pages/about-us/about-us.component';
 import { ServicesDetailsComponent } from './pages/services-details/services-details.component';
 import { ChatComponent } from './pages/chat/chat.component';
 import { AchievmentsDetailsComponent } from './pages/achievments-details/achievments-details.component';
+import { ClientsPreferUsComponent } from './components/clients-prefer-us/clients-prefer-us.component';
 
 @NgModule({
   declarations: [
@@ -44,7 +44,7 @@ import { AchievmentsDetailsComponent } from './pages/achievments-details/achievm
     HomeComponent,
     BannerComponent,
     HightlightsComponent,
-    AchievementsComponent,
+    ClientsPreferUsComponent,
     PennedByOurMindsComponent,
     FooterComponent,
     HeaderComponent,
