@@ -21,7 +21,7 @@ import { PlatformDetailsComponent } from './pages/platform-details/platform-deta
 const routes: Routes = [
   { path: 'home', component: HomeComponent },
   { path: 'news-and-events', component: NewsAndEventsComponent },
-  { path: 'news-details/:id', component: NewsDetailsComponent },
+  { path: 'news-and-events/:id', component: NewsDetailsComponent },
   { path: 'careers', component: CareersComponent },
   { path: 'career-details', component: CareerDetailsComponent },
   { path: 'platforms', component: PlatformsComponent },

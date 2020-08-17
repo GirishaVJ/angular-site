@@ -70,6 +70,6 @@ export class OwlComponent implements OnInit {
   ngOnInit(): void {}
 
   showDetails(slide) {
-    this.router.navigate(['/news-details',slide.url]);
+    this.router.navigate(['/news-and-events',slide.url]);
   }
 }
