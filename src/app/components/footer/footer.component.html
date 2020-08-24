@@ -2,7 +2,7 @@
   <div class="container-fluid">
     <div class="container">
       <div class="row">
-        <div class="col-md-9">
+        <div class="col-md-9 d-none d-md-block">
           <div class="row">
             <div class="ganit-logo">Ganit</div>
           </div>
@@ -21,7 +21,9 @@
                 <li><a [routerLink]="['/industries']">Retails</a></li>
                 <li><a [routerLink]="['/industries']">CPG</a></li>
                 <li><a [routerLink]="['/industries']">Pharma</a></li>
-                <li><a [routerLink]="['/industries']">Financial Services</a></li>
+                <li>
+                  <a [routerLink]="['/industries']">Financial Services</a>
+                </li>
               </ul>
             </div>
             <div class="col-md-3">
@@ -29,7 +31,11 @@
                 <li><a [routerLink]="['/industries']">Chemicals</a></li>
                 <li><a [routerLink]="['/industries']">Energy</a></li>
                 <li><a [routerLink]="['/industries']">Public Sector</a></li>
-                <li><a [routerLink]="['/industries']">Restaurants & Hospitality</a></li>
+                <li>
+                  <a [routerLink]="['/industries']"
+                    >Restaurants & Hospitality</a
+                  >
+                </li>
               </ul>
             </div>
             <div class="col-md-3">

@@ -4,8 +4,8 @@
   padding-bottom: 200px;
   .container {
     position: relative;
-    h2{
-      font-size: 50px;
+    h2 {
+      font-size: 26px;
       margin-bottom: 60px;
     }
     .each-minds {
@@ -21,6 +21,13 @@
         margin-bottom: 30px;
       }
     }
+  }
+}
 
+@media (min-width: 767px) {
+  .penned-by-our-minds {
+    h2 {
+      font-size: 50px;
+    }
   }
 }

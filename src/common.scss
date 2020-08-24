@@ -3,27 +3,27 @@ html {
 }
 body {
   background-color: #fff;
-  font-family: "CenturyGothic";
+  font-family: 'CenturyGothic';
   font-size: 18px;
 }
 @font-face {
-  font-family: "CenturyGothic";
-  src: url("./assets/fonts/CenturyGothic.eot") format("embedded-opentype");
+  font-family: 'CenturyGothic';
+  src: url('./assets/fonts/CenturyGothic.eot') format('embedded-opentype');
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
-  font-family: "CenturyGothic";
-  src: url("./assets/fonts/CenturyGothic.woff") format("woff"),
-    url("./assets/fonts/CenturyGothic.ttf") format("truetype"),
-    url("./assets/fonts/CenturyGothic.svg#CenturyGothic") format("svg");
+  font-family: 'CenturyGothic';
+  src: url('./assets/fonts/CenturyGothic.woff') format('woff'),
+    url('./assets/fonts/CenturyGothic.ttf') format('truetype'),
+    url('./assets/fonts/CenturyGothic.svg#CenturyGothic') format('svg');
   font-weight: normal;
   font-style: normal;
 }
 * {
   margin: 0;
   padding: 0;
-  font-family: "CenturyGothic";
+  font-family: 'CenturyGothic';
   list-style: none;
   font-weight: normal;
   font-stretch: normal;
@@ -32,7 +32,7 @@ body {
   color: #111111;
 }
 h1 {
-  font-size: 58px;
+  font-size: 26px;
   line-height: 1.03;
 }
 h2 {
@@ -125,7 +125,7 @@ a.viewall {
   pointer-events: none;
   z-index: 100;
   &:before {
-    content: "";
+    content: '';
     position: absolute;
     border-radius: 50%;
     left: -1px;
@@ -189,7 +189,7 @@ a.viewall {
       position: absolute;
       top: 50%;
       right: 0;
-      font-size: 150px;
+      font-size: 50px;
       transform: translateY(-50%);
       opacity: 0.2;
       font-weight: bold;
@@ -264,5 +264,14 @@ a.viewall {
   }
   100% {
     bottom: 3%;
+  }
+}
+
+@media (min-width: 767px) {
+  h1 {
+    font-size: 58px;
+  }
+  .internal-page-container .inner-page-banner .banner-watermark {
+    font-size: 150px;
   }
 }
