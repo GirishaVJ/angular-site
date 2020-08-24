@@ -26,7 +26,7 @@
 
   h2 {
     margin-bottom: 40px;
-    font-size: 50px;
+    font-size: 26px;
     line-height: 1.2;
   }
   main {
@@ -56,5 +56,15 @@
   .icon_four {
     bottom: 30%;
     right: 5%;
+  }
+}
+
+@media (min-width: 767px) {
+  .ganit-highlights {
+    h2 {
+      margin-bottom: 40px;
+      font-size: 50px;
+      line-height: 1.2;
+    }
   }
 }
