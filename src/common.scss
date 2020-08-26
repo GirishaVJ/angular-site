@@ -182,12 +182,12 @@ a.viewall {
 .internal-page-container {
   background-color: #ffffff;
   .inner-page-banner {
-    height: 100vh;
+    padding: 170px 0 100px;
     position: relative;
     .banner-watermark {
       transition: all 0.04s;
       position: absolute;
-      top: 50%;
+      top: 40%;
       right: 0;
       font-size: 50px;
       transform: translateY(-50%);
@@ -242,6 +242,7 @@ a.viewall {
   font-size: 0.8rem;
   animation: bounce 1.5s infinite;
   cursor: pointer;
+  display: none;
   span {
     padding-top: 0.6rem;
     display: block;
@@ -273,5 +274,18 @@ a.viewall {
   }
   .internal-page-container .inner-page-banner .banner-watermark {
     font-size: 150px;
+  }
+  .scroll-down-arrow {
+    display: block;
+  }
+
+  .internal-page-container {
+    .inner-page-banner {
+      padding: 15px;
+      height: 100vh;
+      .banner-watermark {
+        top: 50%;
+      }
+    }
   }
 }
