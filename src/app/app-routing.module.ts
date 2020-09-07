@@ -19,22 +19,86 @@ import { PlatformsComponent } from './pages/platforms/platforms.component';
 import { PlatformDetailsComponent } from './pages/platform-details/platform-details.component';
 
 const routes: Routes = [
-  { path: 'home', component: HomeComponent },
-  { path: 'news-and-events', component: NewsAndEventsComponent },
-  { path: 'news-and-events/:id', component: NewsDetailsComponent },
-  { path: 'careers', component: CareersComponent },
-  { path: 'career-details', component: CareerDetailsComponent },
-  { path: 'platforms', component: PlatformsComponent },
-  { path: 'services', component: ServicesComponent },
-  { path: 'clients-prefer-us', component: PageClientsPreferUsComponent },
-  { path: 'knowledge-hub', component: KnowledgeHubComponent },
-  { path: 'industries/:id', component: IndustriesComponent },
-  { path: 'platform-details', component: PlatformDetailsComponent },
-  { path: 'about-us', component: AboutUsComponent },
-  { path: 'contact-us', component: ContatUsComponent },
-  { path: 'services-details', component: ServicesDetailsComponent },
-  { path: 'chat', component: ChatComponent },
-  { path: 'clients-prefer-us/:id', component: AchievmentsDetailsComponent },
+  {
+    path: 'home',
+    component: HomeComponent,
+    data: { title: 'Home', breadcrumb: 'Home' },
+  },
+  {
+    path: 'news-and-events',
+    component: NewsAndEventsComponent,
+    data: { title: 'News and Events', breadcrumb: 'News and Events' },
+  },
+  {
+    path: 'news-and-events/:id',
+    component: NewsDetailsComponent,
+    data: { title: 'News and Events', breadcrumb: 'News and Events' },
+  },
+  {
+    path: 'careers',
+    component: CareersComponent,
+    data: { title: 'Careers', breadcrumb: 'Careers' },
+  },
+  {
+    path: 'career-details',
+    component: CareerDetailsComponent,
+    data: { title: 'Career Details', breadcrumb: 'Career Details' },
+  },
+  {
+    path: 'platforms',
+    component: PlatformsComponent,
+    data: { title: 'Platforms', breadcrumb: 'Platforms' },
+  },
+  {
+    path: 'services',
+    component: ServicesComponent,
+    data: { title: 'Services', breadcrumb: 'Services' },
+  },
+  {
+    path: 'clients-prefer-us',
+    component: PageClientsPreferUsComponent,
+    data: { title: 'Client Perfer us', breadcrumb: 'Client Perfer us' },
+  },
+  {
+    path: 'knowledge-hub',
+    component: KnowledgeHubComponent,
+    data: { title: 'Knowledge Hum', breadcrumb: 'Knowledge Hub' },
+  },
+  {
+    path: 'industries/:id',
+    component: IndustriesComponent,
+    data: { title: 'Industries', breadcrumb: 'Industries' },
+  },
+  {
+    path: 'platform-details',
+    component: PlatformDetailsComponent,
+    data: { title: 'Platform Details', breadcrumb: 'Platform Details' },
+  },
+  {
+    path: 'about-us',
+    component: AboutUsComponent,
+    data: { title: 'About Us', breadcrumb: 'About Us' },
+  },
+  {
+    path: 'contact-us',
+    component: ContatUsComponent,
+    data: { title: 'Contact Us', breadcrumb: 'Contact Us' },
+  },
+  {
+    path: 'services-details',
+    component: ServicesDetailsComponent,
+    data: { title: 'Service Details', breadcrumb: 'Service Details' },
+  },
+  {
+    path: 'chat',
+    component: ChatComponent,
+    data: { title: 'Chat', breadcrumb: 'Chat' },
+  },
+  {
+    path: 'clients-prefer-us/:id',
+    component: AchievmentsDetailsComponent,
+    data: { title: 'Client Perfer us', breadcrumb: 'Client Perfer us' },
+  },
   { path: '', redirectTo: '/home', pathMatch: 'full' },
   { path: '**', component: PageNotFountComponent },
 ];

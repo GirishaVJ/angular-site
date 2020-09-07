@@ -37,6 +37,8 @@ import { SpotlightsComponent } from './components/spotlights/spotlights.componen
 import { HomeKnowledgeHubComponent } from './components/home-knowledge-hub/home-knowledge-hub.component';
 import { PlatformsComponent } from './pages/platforms/platforms.component';
 import { PlatformDetailsComponent } from './pages/platform-details/platform-details.component';
+import { BreadcrumbComponent } from './components/breadcrumb/breadcrumb.component';
+import { RoutePartsService } from './services/route-parts.service';
 
 @NgModule({
   declarations: [
@@ -67,6 +69,7 @@ import { PlatformDetailsComponent } from './pages/platform-details/platform-deta
     ServicesDetailsComponent,
     ChatComponent,
     AchievmentsDetailsComponent,
+    BreadcrumbComponent,
   ],
   imports: [
     BrowserModule,
@@ -77,7 +80,7 @@ import { PlatformDetailsComponent } from './pages/platform-details/platform-deta
     TabsModule.forRoot(),
     ModalModule.forRoot(),
   ],
-  providers: [CursorService],
+  providers: [CursorService, RoutePartsService],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
