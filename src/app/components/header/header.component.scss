@@ -16,10 +16,9 @@
 }
 .hambergarmenu {
   float: right;
-
   position: absolute;
   right: 20px;
-  top: 15px;
+  top: 0;
   &:before {
     content: '';
     width: 50px;

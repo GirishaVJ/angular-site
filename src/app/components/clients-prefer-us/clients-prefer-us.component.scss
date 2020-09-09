@@ -9,6 +9,10 @@
     height: 100%;
     h2 {
       font-size: 50px;
+      @media (max-width: 576px) {
+        font-size: 32px;
+        margin-bottom: 20px;
+      }
     }
     div {
       min-height: 160px;
@@ -31,17 +35,17 @@
         margin-left: -200px;
         width: 140px;
         height: 140px;
-        @media (max-width: 576px) {
-          position: static;
-          margin-left: 0;
-          display: block;
-          margin-bottom: 20px;
-        }
         @media (max-width: 1024px) {
           margin-left: -100px;
           width: 80px;
           height: 80px;
           left: 0;
+        }
+        @media (max-width: 576px) {
+          position: static;
+          margin-left: 0;
+          display: block;
+          margin-bottom: 20px;
         }
       }
       &.view-all-link {
@@ -50,6 +54,15 @@
           padding: 0;
         }
       }
+    }
+  }
+  @media (max-width: 576px) {
+    padding-bottom: 80px;
+    a {
+      font-weight: 400;
+    &.viewall {
+      font-weight: 700;
+    }
     }
   }
 }

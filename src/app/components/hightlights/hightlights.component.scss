@@ -57,6 +57,9 @@
     bottom: 30%;
     right: 5%;
   }
+  @media (max-width: 576px) {
+    padding-bottom: 80px;
+  }
 }
 
 @media (min-width: 767px) {
