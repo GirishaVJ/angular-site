@@ -39,6 +39,7 @@ import { PlatformsComponent } from './pages/platforms/platforms.component';
 import { PlatformDetailsComponent } from './pages/platform-details/platform-details.component';
 import { BreadcrumbComponent } from './components/breadcrumb/breadcrumb.component';
 import { RoutePartsService } from './services/route-parts.service';
+import { WhyClientsPreferUsComponent } from './pages/why-clients-prefer-us/why-clients-prefer-us.component';
 
 @NgModule({
   declarations: [
@@ -70,6 +71,7 @@ import { RoutePartsService } from './services/route-parts.service';
     ChatComponent,
     AchievmentsDetailsComponent,
     BreadcrumbComponent,
+    WhyClientsPreferUsComponent,
   ],
   imports: [
     BrowserModule,
