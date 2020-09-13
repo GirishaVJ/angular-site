@@ -203,6 +203,12 @@ a.viewall {
         text-align: left;
         color: #ffffff;
         text-shadow: 0 0 3px #343434;
+        @media (max-width: 576px) {
+          display: none;
+        }
+      }
+      @media (max-width: 576px) {
+        top: 170px;
       }
     }
     .container {
@@ -222,6 +228,10 @@ a.viewall {
               &.active {
                 color: #2489ff;
               }
+            }
+            @media (max-width: 576px) {
+              padding-top: 20px;
+              padding-left: 0;
             }
           }
           h1 {
