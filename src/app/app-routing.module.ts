@@ -17,6 +17,7 @@ import { AchievmentsDetailsComponent } from './pages/achievments-details/achievm
 import { PageClientsPreferUsComponent } from './pages/page-clients-prefer-us/page-clients-prefer-us.component';
 import { PlatformsComponent } from './pages/platforms/platforms.component';
 import { PlatformDetailsComponent } from './pages/platform-details/platform-details.component';
+import { WhyClientsPreferUsComponent } from './pages/why-clients-prefer-us/why-clients-prefer-us.component';
 
 const routes: Routes = [
   {
@@ -55,9 +56,14 @@ const routes: Routes = [
     data: { title: 'Services', breadcrumb: 'Services' },
   },
   {
-    path: 'clients-prefer-us',
+    path: 'clients-prefer',
     component: PageClientsPreferUsComponent,
-    data: { title: 'Client Perfer us', breadcrumb: 'Client Perfer us' },
+    data: { title: 'Why', breadcrumb: 'Why' },
+  },
+  {
+    path: 'why-client-prefer-us',
+    component: WhyClientsPreferUsComponent,
+    data: { title: 'Why Client Prefer Us', breadcrumb: 'Why Client Prefer Us' },
   },
   {
     path: 'knowledge-hub',
