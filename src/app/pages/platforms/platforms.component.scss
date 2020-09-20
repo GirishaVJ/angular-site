@@ -21,6 +21,12 @@
       align-items: center;
       justify-content: center;
       color: #fff;
+      @media (max-width: 576px) {
+        margin-bottom: -10px;
+        width: 100%;
+        max-width: none;
+        box-shadow: 0 0 10px 0px #ddd;
+      }
     }
     .text {
       padding: 80px 15px;
@@ -40,6 +46,9 @@
           background: darken(#2489ff, 15%);
           box-shadow: 3px 3px 3px #aaa;
         }
+      }
+      @media (max-width: 576px) {
+        padding: 40px 15px;
       }
     }
     h2 {
@@ -82,6 +91,9 @@
           }
         }
       }
+    }
+    @media (max-width: 576px) {
+    margin-bottom: 50px;
     }
   }
   // &:nth-child(even) {

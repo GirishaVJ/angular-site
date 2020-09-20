@@ -1,4 +1,20 @@
+h2 {
+    @media (max-width: 576px) {
+        font-size: 28px;
+        margin-bottom: 20px;
+    }
+}
+p {
+    @media (max-width: 576px) {
+        font-size: 18px;
+    }
+}
 .job-openings {
+    .job-video-container {
+        @media (max-width: 576px) {
+            padding:0 0 20px;
+        }
+    }
     .post-filter {
         color: #111111;
         font-weight: 700;
@@ -21,6 +37,12 @@
             line-height: 40px;
             height: 40px;
             padding: 0 15px;
+            @media (max-width: 576px) {
+                width: 100%;
+            }
+        }
+        @media (max-width: 576px) {
+            margin-bottom: 30px;
         }
 
     }
@@ -61,7 +83,7 @@
             top: 0;
             left: 0;
             width: 150px;
-            height: 250px;
+            height: 47%;
             background: #2489ff;
             z-index: 0;
         }
@@ -71,7 +93,7 @@
             right: 0;
             bottom: 0;
             width: 150px;
-            height: 250px;
+            height: 47%;
             background: #2489ff;
             z-index: 0;
         }
@@ -80,6 +102,13 @@
             margin:10px 0 0 10px;
             position: relative;
             z-index: 1;
+            @media (max-width: 576px) {
+                width: calc(100% - 10px);
+                margin: 5px 0 0 5px;
+            }
+        }
+        @media (max-width: 576px) {
+            padding-bottom: 5px; 
         }
     }
 }

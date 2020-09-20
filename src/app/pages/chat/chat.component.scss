@@ -169,6 +169,10 @@
             }
         }
     }
+    @media (max-width: 576px) {
+        margin-top: 150px;
+        padding-bottom: 100px;
+    }
 }
 .scroll-down-arrow {
     display: none;

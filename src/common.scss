@@ -46,6 +46,9 @@ img {
 p {
   font-size: 22px;
   line-height: 1.73;
+  @media (max-width: 576px) {
+    font-size: 18px;
+  }
 }
 .clr-blue {
   color: #2489ff;
@@ -237,8 +240,16 @@ a.viewall {
           h1 {
             margin-bottom: 30px;
           }
+          p {
+            @media (max-width: 576px) {
+              font-size: 18px;
+            }
+          }
         }
       }
+    }
+    @media (max-width: 576px) {
+      padding: 170px 0 50px;
     }
   }
 }

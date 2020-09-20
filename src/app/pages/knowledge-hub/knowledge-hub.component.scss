@@ -1,5 +1,8 @@
 .page-knowledge-hub {
     .col-md-4 {
         margin-bottom: 100px;
+        @media (max-width: 576px) {
+            margin-bottom: 50px;
+          }
     }
 }
