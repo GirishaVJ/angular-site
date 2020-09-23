@@ -33,7 +33,7 @@ const routes: Routes = [
   {
     path: 'news-and-events/:id',
     component: NewsDetailsComponent,
-    data: { title: 'News and Events', breadcrumb: 'News and Events' },
+    data: { title: 'News and Events Title', breadcrumb: 'News and Events Details' },
   },
   {
     path: 'careers',
